@@ -1,0 +1,28 @@
+.job-placement-main {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    .scroll-comp-one {
+        position: relative;
+        width: 100vw;
+        display: flex;
+    }
+
+    .germany-will-need-comp {
+        width: 100%;
+        padding: 4% 8%;
+
+        .germany-will-need-img2 {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+
+// @media (width < 680px) {
+// }

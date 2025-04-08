@@ -1,0 +1,164 @@
+@import "../../helper/helper.scss";
+
+.whyChooseUsWrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  // border:1px solid red;
+  // overflow: hidden;
+
+  .whyChooseUsMain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // border: 1px solid green;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .wcuBg {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+    }
+    .wcuBlueCircle {
+      position: absolute;
+      top: -85%;
+      // left: 0;
+      width: 100%;
+      height: 120vh;
+      transform: translateY(-40%);
+      z-index: 2;
+      background-color: #5358db;
+      border-radius: 100%;
+      overflow: hidden;
+      @include sm{
+        height: 50vh;
+        top: -18%;
+        width: 150%;
+        transform: translateY(-75%);
+        // left: 50%;
+      }
+    }
+    .wcuText {
+      position: absolute;
+      top: 15%;
+      left: 0;
+      width: 100%;
+      height: 18.5vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      transition: 0.5s ease;
+      z-index: 2;
+
+      // margin-top: 20vh;
+      transform: translateY(200%);
+      opacity: 0;
+      @include sm{
+        top: 7%;
+      }
+      span {
+        line-height: 1;
+      }
+      .wcuh1 {
+        font-size: 45px;
+        font-weight: 600;
+        @include xl{
+          font-size: 30px;
+
+        }
+      }
+      p {
+        font-size: 16px;
+        font-family: "Gilroy";
+        // line-height: 1;
+        .span2 {
+          // color: #2d3080;
+          font-size: 18px;
+          @include sm{
+            color: white;
+          }
+        }
+      }
+    }
+
+    .cards-section {
+      position: absolute;
+      bottom: 1%;
+      left: 5%;
+      min-width: 90%;
+      height: 100%;
+      display: flex;
+      // justify-content: space-evenly;
+      // transform: translateY(10vw);
+      z-index: 1;
+      img {
+        width: 25%;
+        position: absolute;
+        z-index: 1;
+        @include sm{
+          width: 58%;
+        }
+      }
+      .wcu1 {
+        bottom: -55vh;
+        @include sm{
+          bottom: -25vh;
+          right: -2%;
+        }
+       
+      }
+      .wcu2 {
+        bottom: -85vh;
+        left: 50%;
+        transform: translateX(-50%);
+        @include sm{
+          bottom: -60vh;
+          left: -2%;
+          transform: translateX(0%);
+        }
+      }
+      .wcu3 {
+        bottom: -55vh;
+        right: 0%;
+        @include sm{
+          bottom: -93vh;
+          right: -2%;
+        }
+      }
+      .wcu4 {
+        bottom: -155vh;
+        @include sm{
+          bottom: -130vh;
+        
+        }
+      }
+      .wcu5 {
+        bottom: -210vh;
+        left: 50%;
+        transform: translateX(-50%);
+        @include sm{
+          bottom: -200vh;
+          left: 0;
+          transform: translateX(0%);
+        
+        }
+      }
+      .wcu6 {
+        bottom: -155vh;
+        right: 0%;
+        @include sm{
+          bottom: -165vh;
+        
+        }
+      }
+    }
+  }
+}

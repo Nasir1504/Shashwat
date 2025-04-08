@@ -1,0 +1,70 @@
+@import "../../../helper/helper.scss";
+
+.detailBenefit {
+  width: 100%;
+  height: 100%;
+  .dbHeading {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 0px 30px 0px;
+    position: relative;
+    width: max-content;
+    @include sm{
+      margin: 30px 0px 30px 0px;
+      font-size: 24px;
+      width: 100%;
+    }
+    &::after {
+        content: "";
+        width: 30%;
+        height: 10px;
+        background-color: #ffc537;
+        position: absolute;
+        right:1%;
+        top: 50%;
+        z-index: -1;
+        clip-path: polygon(0 0, 83% 0, 100% 100%, 12% 100%);
+        @include sm{
+          top: 72%;
+          right: 47%;
+          width: 25%;
+        }
+      }
+  }
+  .dbPara {
+    width: 95%;
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 20px;
+      gap: 10px;
+      color: #454545;
+
+      font-family: Gilroy;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      @include sm{
+        align-items: flex-start;
+        font-size: 17px;
+      }
+      span {
+        svg {
+          font-size: 20px;
+          border-radius: 2px;
+          background-color: #3b88c3;
+          color: white;
+          @include md{
+            margin-top: 5px;
+            font-size: 28px;
+          }
+          @include sm{
+            margin-top: 8px;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,244 @@
+@import "../../helper/helper.scss";
+.detailLayout {
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0px;
+  border: 2px solid rgb(0, 0, 0);
+  @include lg {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .detailLeft {
+    width: 56%;
+    height: 100%;
+    // position: relative;
+    overflow-x: hidden;
+    // border: 1px solid red;
+    @include lg {
+      width: 75%;
+      margin-bottom: 30px;
+    }
+    @include md {
+      width: 90%;
+    }
+    .detailNav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 98%;
+      padding: 0px 20px;
+      margin-top: 10px;
+      overflow-x: scroll;
+      //   border: 1px solid green;
+      height: 10%;
+      @include lg {
+        margin-top: 20px;
+        justify-content: flex-start;
+        gap: 50px;
+      }
+      @include lg {
+        margin-top: 50px;
+       padding: 0px 5px;
+      }
+
+      li {
+        color: #898989;
+        // width: max-content;
+        font-family: Gilroy;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        @include sm {
+          font-size: 21px;
+          white-space: nowrap;
+        }
+
+        // border-bottom: 2px solid green;
+      }
+      .active {
+        font-size: 17px;
+        font-weight: 600;
+        border-bottom: 1px solid #2d3080;
+        color: black;
+        @include sm {
+          font-size: 22px;
+        }
+      }
+    }
+    hr {
+      width: 98%;
+      margin-top: -5px;
+      color: #898989;
+      @include sm {
+        margin-top: 0px;
+      }
+    }
+  }
+  .detailRight {
+    width: 25%;
+    height: 100%;
+    // border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+    @include lg {
+      width: 70%;
+      padding: 20px 20px;
+    }
+    @include md {
+      width: 85%;
+    }
+    @include sm {
+      width: 100%;
+    }
+    .detailContact {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      border-radius: 8px;
+      box-shadow: 1px 1px 17px 0.5px rgba(0, 0, 0, 0.15);
+      @include lg {
+        padding: 40px 20px;
+      }
+      .dcHeading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        .spanOne {
+          font-size: 70px;
+          line-height: 1;
+          font-weight: 600;
+          color: #cb9000;
+          @include sm {
+            font-size: 100px;
+          }
+        }
+        .spanTwo {
+          color: #424242;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 1;
+          font-style: italic;
+        }
+        .spanThree {
+          color: #2d3080;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 1;
+        }
+      }
+      .dcInputs {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        input {
+          width: 80%;
+          outline: none;
+          border: 1px solid #d4d4d4;
+          padding: 8px 10px;
+          border-radius: 5px;
+          font-size: 15px;
+          @include lg {
+            padding: 11px 10px;
+          }
+          @include sm {
+            padding: 14px 10px;
+            width: 95%;
+            font-size: 17px;
+          }
+        }
+      }
+      .dcEnrollBtn {
+        width: 100%;
+        margin: 20px auto 0px auto;
+        width: 85%;
+        @include lg {
+          margin-top: 40px;
+        }
+        .dcJoin {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          margin-bottom: 6px;
+          text-align: center;
+          position: relative;
+          @include lg {
+            justify-content: center;
+          }
+          img {
+            position: absolute;
+            left: -1%;
+          }
+          .dcJoinImg2 {
+            left: 9%;
+          }
+          .dcJoinImg3 {
+            left: 19%;
+          }
+
+          .dcText {
+            width: 80%;
+            text-align: right;
+            font-size: 15px;
+            color: #969696;
+            font-weight: 500;
+            @include lg {
+              width: max-content;
+            }
+            @include sm {
+              width: 85%;
+              font-size: 16px;
+            }
+            span {
+              color: #2d3080;
+            }
+          }
+        }
+        .dcBtn {
+          margin: 15px auto 0px auto;
+          width: 85%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #ffc537;
+          padding: 8px 10px;
+          border-radius: 999px;
+          gap: 5px;
+          @include sm {
+            gap: 8px;
+            padding: 10px 10px;
+            // width: 95%;
+          }
+          svg {
+            @include sm {
+              font-size: 22px;
+            }
+          }
+          button {
+            font-size: 16px;
+            font-weight: 600;
+            @include sm {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

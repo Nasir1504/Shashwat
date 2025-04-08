@@ -1,0 +1,196 @@
+@import "../../../helper/helper.scss";
+
+.detailTestmonial {
+  width: 100%;
+  height: 100%;
+  .dtHeading {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 0px 30px 0px;
+    position: relative;
+    width: max-content;
+    @include sm {
+      width: 100%;
+      font-size: 22px;
+
+      margin: 30px 0px 30px 0px;
+    }
+    &::after {
+      content: "";
+      width: 30%;
+      height: 10px;
+      background-color: #ffc537;
+      position: absolute;
+      right: 1%;
+      top: 50%;
+      z-index: -1;
+      clip-path: polygon(0 0, 83% 0, 100% 100%, 12% 100%);
+    }
+  }
+  .dtBottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include sm {
+      flex-direction: column;
+    }
+    gap: 40px;
+    .dtbLeft {
+      width: 30%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.18);
+      @include sm {
+        width: 88%;
+      }
+
+      .dtRating {
+        h3 {
+          font-size: 30px;
+          font-weight: 500;
+        }
+        span {
+          background-color: #cb9000;
+          color: white;
+          font-size: 14px;
+          padding: 3px 5px;
+          border-radius: 4px;
+          font-weight: 400;
+        }
+      }
+      .dtStars {
+        width: 96%;
+        @include sm {
+          padding: 0px 0px 25px 0px;
+          margin: 0px auto;
+        }
+        .dtStar {
+          width: 100%;
+          margin-top: 10px;
+          //   display: flex;
+          .allStars {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 5px;
+            font-size: 14px;
+            margin-top: 20px;
+            svg {
+              color: #faa541;
+            }
+
+            // flex-direction: column;
+          }
+          .dtLine {
+            width: 100%;
+            border-radius: 999px;
+            height: 8px;
+            border: 1px solid #2d3080;
+            position: relative;
+            background-color: #e0e1f4;
+            .dtLineFill {
+              width: 80%;
+              height: 100%;
+              position: absolute;
+              background-color: #2d3080;
+              transition: 0.5s ease;
+              border-radius: 999px;
+            }
+          }
+        }
+      }
+    }
+    .dtbRight {
+      width: 60%;
+      overflow: hidden;
+      padding: 20px 0px;
+      position: relative;
+      @include sm {
+        width: 95%;
+      }
+      .dtItems {
+        width: 96%;
+        margin-left: 2%;
+        display: flex;
+        align-items: center;
+        gap: 10%;
+        line-height: 26px;
+        margin-left: 108%;
+        transition: 0.7s ease-out;
+        // background-color: #9c9191;
+        .dtItem {
+          border-radius: 10px;
+          // box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.18);
+          box-shadow: 1px 1px 17px 0.5px rgba(0, 0, 0, 0.15);
+
+          width: 100%;
+          position: relative;
+
+          .upperQuote {
+            top: -8%;
+            left: -3%;
+            position: absolute;
+            font-size: 50px;
+            color: lightblue;
+          }
+          .bottomQuote {
+            position: absolute;
+            font-size: 50px;
+            bottom: -7%;
+            right: -2%;
+            transform: rotateY(180deg);
+            color: lightblue;
+          }
+
+          padding: 40px 25px;
+
+          min-width: 100%;
+          display: flex;
+          //  align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          p {
+            font-size: 15px;
+          }
+          .dtReview {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+            span {
+              line-height: 1;
+            }
+            .reviewstar {
+              display: flex;
+              align-items: center;
+              svg {
+                color: #faa541;
+              }
+            }
+          }
+        }
+      }
+      .dtDots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        .dtDot {
+          width: 10px;
+          height: 10px;
+          background-color: #cccbcb;
+          border: 1px solid #2d3080;
+          border-radius: 999px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

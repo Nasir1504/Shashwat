@@ -1,0 +1,178 @@
+.footer-mob {
+  // test
+  margin-top: 50px;
+  // -----
+  position: relative;
+  height: 45vh;
+  width: 100%;
+  // background: linear-gradient(180deg, #2d3080 0%, #383c9f 109.83%);
+  background: linear-gradient(179.52deg, #16173f 0.42%, #383c9f 269.02%);
+
+  //   background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .f-parent-mob {
+    position: relative;
+    height: 80%;
+    width: 90%;
+    // border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .f-content-mob {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      // border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: left;
+
+      .f-img-div-mob {
+        position: absolute;
+        left: -2%;
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        // border: 1px solid red;
+        .f-logo-mob {
+          position: relative;
+          height: auto;
+          width: 50%;
+          object-fit: contain;
+          cursor: pointer;
+        }
+      }
+
+      .f-logo-txt-mob {
+        position: absolute;
+        height: 55%;
+        width: 92%;
+        bottom: 15%;
+        color: rgba(255, 255, 255, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        font-weight: 100;
+        font-size: 2.3vw;
+        bottom: 0;
+        left: 0.5%;
+        // border: 1px solid red;
+      }
+
+      .f-div-2-txt-mob {
+        position: absolute;
+        height: 15%;
+        width: 16%;
+        // border: 1px solid red;
+        color: rgba(255, 197, 55, 1);
+        font-size: 3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        left: 0%;
+      }
+
+      .f-socials-div-mob {
+        position: absolute;
+        height: 40%;
+        // width: 25%;
+        // border: 1px solid red;
+        top: 40%;
+        left: -1%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .f-socials-icon-mob {
+          position: relative;
+          height: 100%;
+          width: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          overflow: hidden;
+          //   background-color: green;
+
+          .f-ico-mob {
+            height: auto;
+            width: 60%;
+            object-fit: contain;
+            overflow: hidden;
+          }
+        }
+      }
+
+      .f-div-links-mob {
+        position: absolute;
+        height: 70%;
+        width: 85%;
+        // border: 1px solid red;
+        bottom: 10%;
+        left: -1%;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        flex-direction: column;
+        // justify-content: space-between;
+        // overflow: hidden;
+        text-align: left;
+        padding: 5px;
+
+        .f-link-mob {
+          position: relative;
+          height: 5%;
+          width: 70%;
+          // border: 1px solid green;
+          font-size: 2.5vw;
+          font-weight: 100;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          color: rgba(255, 255, 255, 1);
+          cursor: pointer;
+        }
+      }
+
+      .f-contact-div-mob {
+        position: absolute;
+        height: 72%;
+        width: 15%;
+        // border: 1px solid red;
+        // top: 18%;
+        bottom: -2%;
+        left: -4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .f-contact-icon-mob {
+          position: relative;
+          height: 100%;
+          width: 45%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 6%;
+          // background-color: green;
+          .f-c-ico-mob {
+            height: auto;
+            width: 50%;
+            object-fit: contain;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}

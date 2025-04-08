@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+.card-div-cont {
+    position: relative;
+    min-width: 25%;
+    //    border:1px solid blue;
+    display: flex;
+    justify-content: center;
+    margin-right: 0.67vw;
+
+    .card-div-img {
+        width: 90%;
+        // height: 100%;
+        object-fit: contain;
+        // transform:rotate(-15deg);
+        // border:1px solid green;
+    }
+
+    .shashy-courses {
+        color: #373BB4;
+        position: absolute;
+        right: 14%;
+        top: 4.4%;
+        font-size: 0.9vw;
+        font-weight: 600;
+    }
+
+    .shashy-german {
+        color: black;
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.85vw;
+        font-weight: 400;
+        font-family: "Germania One", system-ui;
+    }
+
+    .shash-logo {
+        position: absolute;
+        width: 16%;
+        object-fit: contain;
+        top: 2vw;
+        left: 3.4vw;
+    }
+
+    .shash-h2 {
+        position: absolute;
+        top: 5vw;
+        left: 3.4vw;
+        font-size: 1.2vw;
+        color: #fff;
+        font-weight: 600;
+        line-height: 1.2;
+
+        span {
+            border-bottom: 2px solid white;
+        }
+    }
+
+    .shash-p {
+        position: absolute;
+        top: 11.5vw;
+        left: 3.4vw;
+        font-size: 0.9vw;
+        color: #fff;
+    }
+
+    // .shashWhite {
+    //     color: white;
+    // }
+
+    .course-info-div {
+        position: absolute;
+        top: 14vw;
+
+        .course-level {
+            min-width: 90%;
+            // max-width: 86%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            // border:1px solid red;
+            .bluish {
+                color: #2D3080;
+            }
+
+            .course-h1 {
+                font-size: 1.25vw;
+                font-weight: 600;
+                // border:1px solid blue;
+            }
+
+            .shash-stars {
+                display: flex;
+                justify-content: center;
+                margin: 0 1vw;
+                // border:1px solid green;
+
+                .s-stars {
+                    width: 0.85vw;
+                    object-fit: contain;
+                }
+            }
+
+            .rating {
+                font-size: 0.9vw;
+                color: #9B9B9B;
+            }
+        }
+
+        .course-duration {
+            font-size: 1vw;
+            font-weight: 300;
+        }
+
+        .bluish {
+            color: #2D3080;
+        }
+
+        .course-lectures {
+            min-width: 90%;
+            display: flex;
+            justify-content: space-between;
+            //  border:1px solid red;
+            margin-top: 0.5vw;
+
+            .cl-info1 {
+                width: 33%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                // border:1px solid red;
+
+                .eyeCon {
+                    width: 50%;
+                    object-fit: contain
+                }
+
+                .cl-info-p {
+                    font-size: 0.85vw;
+                    color: rgba(255, 255, 255, 0.9);
+                }
+
+                .bluish {
+                    color: #2D3080;
+                }
+            }
+
+        }
+
+        .know-more-btn {
+            font-size: 1vw;
+            font-weight: 500;
+            margin-top: 0.5vw;
+            padding: 0.4vw 1vw;
+            background-color: #2D3080;
+            border-radius: 0.5vw;
+            box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+// .conty1,.conty3,.conty5{
+//     transform:rotate(5deg);
+// }
+// .conty2,.conty4,.conty6{
+//     transform:rotate(-5deg);
+// }

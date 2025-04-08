@@ -1,0 +1,22 @@
+// ---------------- Responsive Mixins -----------------------
+
+@mixin sm {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}

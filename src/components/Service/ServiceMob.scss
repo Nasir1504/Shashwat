@@ -1,0 +1,208 @@
+.service-mob {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gilroy";
+  overflow: hidden;
+
+  // background-color: rgb(231, 143, 36);
+  .ser-intro-txt-mob {
+    position: absolute;
+    height: 10%;
+    width: 80%;
+    top: 5%;
+    left: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    text-align: left;
+    // font-weight: 500;
+    font-style: bold;
+    color: #0d0d0d;
+    // border: 1px solid #fff;
+  }
+
+  .ser-main-div-mob {
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 18%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    // overflow-x: scroll;
+    border-radius: 4vw;
+    // background: linear-gradient(359.77deg, #686bc7 -11.31%, #272ccf 97%);
+    background: linear-gradient(171.64deg,
+        rgba(147, 149, 250, 0.9) 6.41%,
+        rgba(54, 55, 122, 0.9) 100%);
+
+    .ser-bg-design {
+      position: absolute;
+      height: auto;
+      min-width: 125%;
+      object-fit: cover;
+    }
+
+    .ser-scroll-div-parent-mob {
+      position: absolute;
+      height: 95%;
+      width: 90%;
+      left: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      //   border: 1px solid greenyellow;
+      padding-left: 1.5vw;
+      padding-right: 1.5vw;
+
+      .ser-scroll-div-mob {
+        position: relative;
+        min-height: 30%;
+        // height: 100%;
+        width: 100%;
+        // border: 1px solid white;
+        background-color: white;
+        border-radius: 4vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        // gap: 1vh;
+
+        .link-to-mob {
+          position: absolute;
+          // background-color: #fff;
+          height: 100%;
+          width: 100%;
+          z-index: 3;
+
+        }
+
+        .ser-scroll-bg-mob {
+          position: absolute;
+          top: 4%;
+          left: -2%;
+          height: auto;
+          width: 100%;
+          object-fit: contain;
+        }
+
+        .ser-c-img-box-mob {
+          position: absolute;
+          height: 85%;
+          width: 45%;
+          right: 4%;
+          //   border: 1px solid red;
+          border-radius: 2vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+
+          .ser-c-img-mob {
+            position: relative;
+            height: auto;
+            width: auto;
+            object-fit: cover;
+          }
+        }
+
+        .ser-c-detail-box-mob {
+          position: absolute;
+          height: 75%;
+          width: 45%;
+          left: 4%;
+          bottom: 0;
+          //   border: 1px solid white;
+          font-size: 1vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          text-align: left;
+
+          .c-logo-parent-mob {
+            position: absolute;
+            height: 25%;
+            width: 35%;
+            top: -4%;
+            left: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // background-color: yellow;
+            z-index: 2;
+
+            .ser-c-logo-mob {
+              height: auto;
+              width: 100%;
+              object-fit: contain;
+            }
+          }
+
+          .ser-c-heading-mob {
+            position: absolute;
+            height: 30%;
+            width: 70%;
+            top: 18%;
+            left: 0%;
+            // border: 1px solid red;
+            font-size: 4.5vw;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.1rem;
+          }
+
+          .ser-c-desc-mob {
+            position: absolute;
+            height: 30%;
+            width: 100%;
+            top: 50%;
+            // border: 1px solid green;
+            font-size: 2vw;
+            font-weight: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 0.8rem;
+          }
+        }
+
+        .ser-c-more-mob {
+          position: absolute;
+          height: 16%;
+          width: 35%;
+          bottom: -8%;
+          left: 30%;
+          z-index: 2;
+          border-radius: 2vw;
+          font-size: 3.5vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid white;
+          cursor: pointer;
+          background: linear-gradient(0deg,
+              rgba(196, 196, 196, 0.05),
+              rgba(196, 196, 196, 0.05)),
+            linear-gradient(0deg, #373bb4, #373bb4);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
