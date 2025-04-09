@@ -61,7 +61,7 @@ export default function Opportunities({ progress, query }) {
               style={{
                 transform:
                   progress.Progress > 0.2 &&
-                  `translateY(-${Math.min(55, Math.max(0, progress.Progress * 80))}%)`,
+                  `translateY(-${Math.min(41, Math.max(0, progress.Progress * 80))}%)`,
                 // transform: 'translateY(-55%)'
               }}
             >

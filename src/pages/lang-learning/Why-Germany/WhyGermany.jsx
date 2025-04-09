@@ -25,14 +25,24 @@ export default function WhyGermany({ progress, query }) {
             }}
           />
         </h3>
-        <p>
-          What makes Germany the ideal destination for world-class education and
-          limitless opportunities?
-          <br />
-          There are a plethora of reasons why it’s one of the favorite
-          destinations of international students, some <br />
-          of which are:
-        </p>
+        {!query ?
+          <p>
+            What makes Germany the ideal destination for world-class education and
+            limitless opportunities?
+            <br />
+            There are a plethora of reasons why it’s one of the favorite
+            destinations of international students, some <br />
+            of which are:
+          </p>
+          :
+          <p>
+            What makes Germany the ideal destination for world-class education and
+            limitless opportunities?
+            <br />
+            There are a plethora of reasons why it’s one of the favorite
+            destinations of international students, some of which are:
+          </p>
+        }
         <button>Explore Now</button>
       </section>
       <section className="bottom-section">
@@ -59,7 +69,7 @@ export default function WhyGermany({ progress, query }) {
               style={{
                 transform:
                   progress.Progress > 0.05
-                    ? `translateY(-${Math.min(230, Math.max(0, progress.Progress * 260))}%)`
+                    ? `translateY(-${Math.min(190, Math.max(0, progress.Progress * 260))}%)`
                     : "",
               }}
             >

@@ -206,7 +206,7 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      padding: 10% 0 0 5%;
+      padding: 10% 5% 0 5%;
       overflow: hidden;
 
       .sub-heading1 {
@@ -216,7 +216,7 @@
       }
 
       h3 {
-        font-size: 5.8vw;
+        font-size: 6vw;
         font-weight: 500;
         line-height: 1.2;
         margin-bottom: 2%;
@@ -249,7 +249,7 @@
 
         .circle-frame {
           position: absolute;
-          top: 8vw;
+          top: 10vw;
           width: 85%;
           object-fit: contain;
           animation: circleRotationKF 50s ease-in-out infinite;
@@ -257,7 +257,7 @@
 
         .circle-vector {
           position: absolute;
-          top: 17.2vw;
+          top: 18.2vw;
           width: 70%;
           object-fit: contain;
         }
@@ -266,7 +266,7 @@
           position: absolute;
           width: 45%;
           object-fit: contain;
-          top: 1vw;
+          top: 6vw;
         }
       }
     }

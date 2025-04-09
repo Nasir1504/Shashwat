@@ -65,11 +65,9 @@
       height: 8vw;
       z-index: 1;
       background-color: #fff;
-      background: linear-gradient(
-        90deg,
-        rgba(45, 48, 128, 1) 0%,
-        rgba(232, 233, 255, 1) 100%
-      );
+      background: linear-gradient(90deg,
+          rgba(45, 48, 128, 1) 0%,
+          rgba(232, 233, 255, 1) 100%);
       border-radius: 100%;
       // display: none;
       display: flex;
@@ -131,6 +129,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    // border: 1px solid #000;
 
     .top-section {
       position: relative;
@@ -141,12 +140,12 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      padding-top: 15%;
+      padding-top: 10%;
       overflow: hidden;
 
       h3 {
-        width: 100%;
-        font-size: 5vw;
+        width: 70%;
+        font-size: 6vw;
         color: #000;
         font-weight: 500;
         display: flex;
@@ -154,19 +153,21 @@
         gap: 2%;
 
         .img-span {
-          width: 8.5vw;
+          width: 20vw;
           aspect-ratio: 1;
           // background-color: #fff;
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
-          margin-top: -2vw;
+          margin-top: 4vw;
         }
       }
 
       p {
-        font-size: 2.8vw;
+        font-size: 3.2vw;
         color: #000;
+        padding-right: 20%;
+        margin-top: 2vw;
       }
     }
 
@@ -187,14 +188,12 @@
         position: absolute;
         // left: 0vw;
         width: 105vw;
-        height: 20vw;
+        height: 10vw;
         z-index: 1;
         background-color: #fff;
-        background: linear-gradient(
-          90deg,
-          rgba(45, 48, 128, 1) 0%,
-          rgba(232, 233, 255, 1) 100%
-        );
+        background: linear-gradient(90deg,
+            rgba(45, 48, 128, 1) 0%,
+            rgba(232, 233, 255, 1) 100%);
         border-radius: 100%;
         // display: none;
         display: flex;
@@ -211,7 +210,7 @@
       }
 
       .ellipse1 {
-        top: -12vw;
+        top: -6vw;
       }
 
       .ellipse2 {

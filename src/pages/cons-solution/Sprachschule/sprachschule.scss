@@ -216,11 +216,11 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      padding: 12% 0 0 4%;
+      padding: 12% 0 0 5%;
       overflow: hidden;
 
       h3 {
-        font-size: 5vw;
+        font-size: 6vw;
         font-weight: 500;
         line-height: 1.2;
         margin-bottom: 2%;
@@ -233,23 +233,25 @@
       }
 
       .sub-heading {
-        width: 50%;
-        font-size: 2.6vw;
+        width: 80%;
+        font-size: 3.2vw;
         color: #2f2f2f;
         font-weight: 500;
         line-height: 1.2;
       }
 
-      .circle-frame-main {
+      .circle-frame-main-mobile {
         position: absolute;
         top: 45%;
-        width: 80vw;
-        height: 80vw;
+        width: 95vw;
+        height: 95vw;
         // border: 1px solid #000;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        // border: 1px solid #000;
+        margin: 0;
 
         @keyframes circleRotationKF {
           100% {
@@ -261,7 +263,7 @@
           position: absolute;
           width: 85%;
           object-fit: contain;
-          top: 5vw;
+          top: 6vw;
           animation: circleRotationKF 50s ease-in-out infinite;
         }
 
@@ -269,7 +271,7 @@
           position: absolute;
           width: 70%;
           object-fit: contain;
-          top: 12vw;
+          top: 13vw;
         }
 
         .person-img {

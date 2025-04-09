@@ -73,7 +73,7 @@
 @media (width < 680px) {
   .individual-aiming-main {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     // background-color: #000;
     display: flex;
     flex-direction: column;
@@ -88,17 +88,17 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      padding-left: 4%;
+      padding: 10% 0 0 5%;
 
       p {
         text-transform: capitalize;
-        font-size: 2.8vw;
+        font-size: 3.2vw;
         font-weight: 400;
       }
 
       h3 {
         text-transform: capitalize;
-        font-size: 5.5vw;
+        font-size: 5.8vw;
         font-weight: 600;
         color: #2b2e7c;
         line-height: 1.2;
@@ -128,7 +128,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          gap: 25%;
+          gap: 10%;
           transform: translate(100%);
           transition: all 2s cubic-bezier(0.05, 1.15, 1, 0.99);
 
@@ -138,7 +138,7 @@
             width: 85%;
             padding: 5vw 0vw 5vw 2vw;
             border-radius: 5vw;
-            font-size: 2.8vw;
+            font-size: 3.2vw;
           }
         }
       }
