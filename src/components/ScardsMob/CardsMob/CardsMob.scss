@@ -1,173 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
 
 .card-div-cont-mb {
-    position: relative;
-    width: 48%;
-    //    border:1px solid blue;
-    display: flex;
-    justify-content: center;
-    margin-right: 0.67vw;
-    margin-top: 1vw;
+  position: relative;
+  width: 48%;
+  //    border:1px solid blue;
+  display: flex;
+  justify-content: center;
+  margin-right: 0.67vw;
+  margin-top: 1vw;
 
-    .card-div-img-mb {
-        width: 95%;
-        // height: 100%;
-        object-fit: contain;
-        // transform:rotate(-15deg);
-        // border:1px solid green;
+  .card-div-img-mb {
+    width: 95%;
+    // height: 100%;
+    object-fit: contain;
+    // transform:rotate(-15deg);
+    // border:1px solid green;
+  }
+
+  .shashy-courses-mb {
+    color: #373bb4;
+    position: absolute;
+    right: 10%;
+    top: 3.2%;
+    font-size: 2.25vw;
+    font-weight: 600;
+  }
+
+  .shashy-german-mb {
+    color: black;
+    position: absolute;
+    bottom: 2.6%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2vw;
+    font-weight: 400;
+    font-family: "Germania One", system-ui;
+  }
+
+  .shash-logo-mb {
+    position: absolute;
+    width: 20%;
+    object-fit: contain;
+    top: 4.5vw;
+    left: 5.5vw;
+  }
+
+  .shash-h2-mb {
+    position: absolute;
+    top: 11.5vw;
+    left: 6vw;
+    font-size: 2.7vw;
+    color: #2d3080;
+    font-weight: 600;
+    line-height: 1.2;
+
+    span {
+      border-bottom: 2px solid white;
     }
+  }
 
-    .shashy-courses-mb {
-        color: #373BB4;
-        position: absolute;
-        right: 10%;
-        top: 3.2%;
-        font-size: 2.25vw;
+  .shash-p-mb {
+    position: absolute;
+    top: 26vw;
+    left: 6vw;
+    font-size: 2.25vw;
+    color: #2d3080;
+  }
+
+  .shashWhite-mb {
+    color: white;
+  }
+
+  .course-info-div-mb {
+    width: 80%;
+    position: absolute;
+    top: 30vw;
+    // border:1px solid blue;
+
+    .course-level-mb {
+      min-width: 90%;
+      // max-width: 86%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // border:1px solid red;
+      margin-top: 1.5vw;
+
+      .bluish-mb {
+        color: #2d3080;
+      }
+
+      .course-h1-mb {
+        font-size: 3.15vw;
         font-weight: 600;
-    }
-
-    .shashy-german-mb {
-        color: black;
-        position: absolute;
-        bottom: 2.6%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 2vw;
-        font-weight: 400;
-        font-family: "Germania One", system-ui;
-    }
-
-    .shash-logo-mb {
-        position: absolute;
-        width: 20%;
-        object-fit: contain;
-        top: 4.5vw;
-        left: 5.5vw;
-    }
-
-    .shash-h2-mb {
-        position: absolute;
-        top: 11.5vw;
-        left: 6vw;
-        font-size: 2.7vw;
-        color: #2D3080;
-        font-weight: 600;
-        line-height: 1.2;
-
-        span {
-            border-bottom: 2px solid white;
-        }
-    }
-
-    .shash-p-mb {
-        position: absolute;
-        top: 26vw;
-        left: 6vw;
-        font-size: 2.25vw;
-        color: #2D3080;
-    }
-
-    .shashWhite-mb {
-        color: white;
-    }
-
-    .course-info-div-mb {
-        width: 80%;
-        position: absolute;
-        top: 30vw;
+        // margin-top: 1.5vw;
         // border:1px solid blue;
+      }
 
-        .course-level-mb {
-            min-width: 90%;
-            // max-width: 86%;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            // border:1px solid red;
-            margin-top: 1.5vw;
+      .shash-stars-mb {
+        display: flex;
+        justify-content: center;
 
-            .bluish-mb {
-                color: #2D3080;
-            }
+        margin: 0 1vw;
+        // border:1px solid green;
 
-            .course-h1-mb {
-                font-size: 3.15vw;
-                font-weight: 600;
-                // margin-top: 1.5vw;
-                // border:1px solid blue;
-            }
+        .s-stars-mb {
+          width: 2.35vw;
+          object-fit: contain;
+        }
+      }
 
-            .shash-stars-mb {
-                display: flex;
-                justify-content: center;
+      .rating-mb {
+        font-size: 2.45vw;
+        color: #9b9b9b;
+      }
+    }
 
-                margin: 0 1vw;
-                // border:1px solid green;
+    .course-duration-mb {
+      font-size: 2.8vw;
+      font-weight: 300;
+    }
 
-                .s-stars-mb {
-                    width: 2.35vw;
-                    object-fit: contain;
-                }
-            }
+    .bluish-mb {
+      color: #2d3080;
+    }
 
-            .rating-mb {
-                font-size: 2.45vw;
-                color: #9B9B9B;
-            }
+    .course-lectures-mb {
+      min-width: 90%;
+      display: flex;
+      justify-content: space-between;
+      //  border:1px solid red;
+      margin-top: 0.5vw;
+
+      .cl-info1-mb {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // border:1px solid red;
+
+        .eyeCon-mb {
+          width: 55%;
+          object-fit: contain;
         }
 
-        .course-duration-mb {
-            font-size: 2.8vw;
-            font-weight: 300;
+        .cl-info-p-mb {
+          font-size: 2.25vw;
+          color: rgba(255, 255, 255, 0.9);
+          line-height: 1;
+          text-align: center;
         }
 
         .bluish-mb {
-            color: #2D3080;
+          color: #2d3080;
         }
-
-        .course-lectures-mb {
-            min-width: 90%;
-            display: flex;
-            justify-content: space-between;
-            //  border:1px solid red;
-            margin-top: 0.5vw;
-
-            .cl-info1-mb {
-                width: 33%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                // border:1px solid red;
-
-                .eyeCon-mb {
-                    width: 55%;
-                    object-fit: contain
-                }
-
-                .cl-info-p-mb {
-                    font-size: 2.25vw;
-                    color: rgba(255, 255, 255, 0.9);
-                    line-height: 1;
-                    text-align: center;
-                }
-
-                .bluish-mb {
-                    color: #2D3080;
-                }
-            }
-
-        }
-
-        .know-more-btn-mb {
-            font-size: 2.1vw;
-            font-weight: 500;
-            padding: 0.4vw 1vw;
-            background-color: #2D3080;
-            border-radius: 0.5vw;
-            box-shadow: 0.4vw 0.4vw 0.45vw 0px rgba(0, 0, 0, 0.75);
-            margin-left: 50%;
-            transform: translateX(-50%);
-        }
+      }
     }
+
+    .know-more-btn-mb {
+      font-size: 2.1vw;
+      font-weight: 500;
+      padding: 0.4vw 1vw;
+      background-color: #2d3080;
+      border-radius: 0.5vw;
+      box-shadow: 0.4vw 0.4vw 0.45vw 0px rgba(0, 0, 0, 0.75);
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }

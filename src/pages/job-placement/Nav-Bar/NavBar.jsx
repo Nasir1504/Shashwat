@@ -3,8 +3,7 @@ import logo from "../../../assets/logo.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { CgMenuLeftAlt } from "react-icons/cg";
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
 
 const NavBar = ({ JobPlacementRef }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,10 +11,9 @@ const NavBar = ({ JobPlacementRef }) => {
   const navigate = useNavigate(); // Hook to navigate
 
   const handleClick = () => {
-    navigate('/'); // Navigate to the "/" route
-    window.scrollTo(0, 0)
+    navigate("/"); // Navigate to the "/" route
+    window.scrollTo(0, 0);
   };
-
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -51,7 +49,12 @@ const NavBar = ({ JobPlacementRef }) => {
         className="navbar fixed top-2 left-1/2 -translate-x-1/2 w-[96%] h-[70px] md:h-[80px] px-8 py-4 flex justify-between items-center rounded-3xl z-50"
       >
         <div className="logo-container w-16 h-16 md:w-20 md:h-20">
-          <img src={logo} alt="logo" className="w-full h-full object-contain cursor-pointer" onClick={handleClick} />
+          <img
+            src={logo}
+            alt="logo"
+            className="w-full h-full object-contain cursor-pointer"
+            onClick={handleClick}
+          />
         </div>
 
         {/* Desktop Menu */}
@@ -104,8 +107,9 @@ const NavBar = ({ JobPlacementRef }) => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed top-0 left-0 w-3/4 h-full bg-gradient-mobile shadow-lg shadow-black rounded-r-[38px] text-white p-8 transform ${isOpen ? "translate-x-0" : "-translate-x-full"
-          } transition-transform duration-300 ease-in-out z-[60]`}
+        className={`fixed top-0 left-0 w-3/4 h-full bg-gradient-mobile shadow-lg shadow-black rounded-r-[38px] text-white p-8 transform ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } transition-transform duration-300 ease-in-out z-[60]`}
       >
         <div className="absolute top-4 left-4 text-3xl text-white">Menu</div>
         <div className="absolute w-[90%] top-16 left-4 bg-white h-[1px]" />

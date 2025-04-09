@@ -36,7 +36,7 @@
       background-color: #5358db;
       border-radius: 100%;
       overflow: hidden;
-      @include sm{
+      @include sm {
         height: 50vh;
         top: -18%;
         width: 150%;
@@ -61,7 +61,7 @@
       // margin-top: 20vh;
       transform: translateY(200%);
       opacity: 0;
-      @include sm{
+      @include sm {
         top: 7%;
       }
       span {
@@ -70,9 +70,8 @@
       .wcuh1 {
         font-size: 45px;
         font-weight: 600;
-        @include xl{
+        @include xl {
           font-size: 30px;
-
         }
       }
       p {
@@ -82,7 +81,7 @@
         .span2 {
           // color: #2d3080;
           font-size: 18px;
-          @include sm{
+          @include sm {
             color: white;
           }
         }
@@ -103,23 +102,22 @@
         width: 25%;
         position: absolute;
         z-index: 1;
-        @include sm{
+        @include sm {
           width: 58%;
         }
       }
       .wcu1 {
         bottom: -55vh;
-        @include sm{
+        @include sm {
           bottom: -25vh;
           right: -2%;
         }
-       
       }
       .wcu2 {
         bottom: -85vh;
         left: 50%;
         transform: translateX(-50%);
-        @include sm{
+        @include sm {
           bottom: -60vh;
           left: -2%;
           transform: translateX(0%);
@@ -128,35 +126,32 @@
       .wcu3 {
         bottom: -55vh;
         right: 0%;
-        @include sm{
+        @include sm {
           bottom: -93vh;
           right: -2%;
         }
       }
       .wcu4 {
         bottom: -155vh;
-        @include sm{
+        @include sm {
           bottom: -130vh;
-        
         }
       }
       .wcu5 {
         bottom: -210vh;
         left: 50%;
         transform: translateX(-50%);
-        @include sm{
+        @include sm {
           bottom: -200vh;
           left: 0;
           transform: translateX(0%);
-        
         }
       }
       .wcu6 {
         bottom: -155vh;
         right: 0%;
-        @include sm{
+        @include sm {
           bottom: -165vh;
-        
         }
       }
     }

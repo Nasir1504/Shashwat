@@ -109,7 +109,7 @@ export const Service = () => {
                 className="ser-c-img"
                 src={c1Img}
                 alt=""
-              // style={{ width: "120%", height: "100%" }}
+                // style={{ width: "120%", height: "100%" }}
               />
             </div>
 
@@ -168,7 +168,8 @@ export const Service = () => {
               </div> */}
             </div>
           </div>
-          <div className="ser-scroll-div"
+          <div
+            className="ser-scroll-div"
             style={{ backgroundColor: "#2D3080" }}
           >
             <Link className="link-to" to="/job-placement" />
@@ -183,10 +184,10 @@ export const Service = () => {
               </div>
               <div
                 className="ser-c-heading"
-              // style={{
-              //   left: "3%",
-              //   color: " #2D3080",
-              // }}
+                // style={{
+                //   left: "3%",
+                //   color: " #2D3080",
+                // }}
               >
                 <p>Job Placement</p>
               </div>

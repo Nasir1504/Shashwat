@@ -1,410 +1,387 @@
 .guide-to-eduction-main {
+  width: 100%;
+  height: 100vh;
+  // background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+
+  .left-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5%;
+    // border: 1px solid #000;
+    padding-left: 4%;
+    transition: all 0.2s ease-out;
+
+    .heading-main {
+      position: relative;
+      width: 35vw;
+      height: 11vw;
+      // border: 1px solid #000;
+
+      .heading-text {
+        position: absolute;
+        width: 100%;
+        object-fit: contain;
+        // opacity: 0;
+        transition: 0s ease-out;
+      }
+    }
+
+    p {
+      font-size: 1.2vw;
+      font-weight: 500;
+    }
+
+    .btn-main {
+      position: relative;
+      width: 60%;
+      // height: 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // border: 1px solid #000;
+
+      .bachelors,
+      .masters {
+        // width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25em;
+        // background-color: #fff000;
+
+        .text-span {
+          color: #0d0d0d8e;
+          font-size: 1.4vw;
+          font-weight: 500;
+        }
+
+        .btn-span {
+          font-size: 1.2vw;
+          color: #000;
+          font-weight: 500;
+          background-color: #d9d9d9;
+          padding: 0.2em 0.8em;
+          border-radius: 500px;
+          user-select: none;
+          cursor: pointer;
+          box-shadow: 0.05em 0.15em 1px #0000004e;
+          transition: 0s;
+
+          &:hover {
+            box-shadow: 0.05em 0.15em 1px #000000ae;
+          }
+        }
+      }
+
+      .cursor-icon {
+        position: absolute;
+        top: 65%;
+        width: 8vw;
+        height: 4vw;
+        // border: 1px solid #000;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translate(15vw, 25vh);
+        transition: 0.4s ease-in-out;
+      }
+    }
+  }
+
+  // ---------------------------------------------
+  .right-section {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: linear-gradient(90deg, rgba(145, 148, 255, 1) 0%, rgba(39, 43, 153, 1) 100%);
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+
+    .rect1 {
+      position: absolute;
+      bottom: 0;
+      z-index: 0;
+      right: 0;
+      width: 90%;
+      height: 99%;
+      border-radius: 100px 0 0 0;
+    }
+
+    .hr-vector {
+      position: absolute;
+      left: 12%;
+      bottom: 0;
+      // width: 2vw;
+      height: 80%;
+      object-fit: contain;
+      // border: 1px solid #000;
+    }
+
+    .bachelor-frame,
+    .master-frame {
+      position: absolute;
+      left: 20%;
+      // width: 80%;
+      height: 80%;
+      object-fit: contain;
+      // border: 1px solid #000;
+      transition: 0.8s ease-in-out;
+    }
+
+    .bachelor-frame {
+      bottom: 0;
+    }
+
+    .master-frame {
+      bottom: -80%;
+    }
+  }
+
+  // ---------------------------------------------
+
+  .bottom-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // background-color: #fff000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 4%;
+    gap: 5%;
+    top: 140%;
+    transition: all 0.2s ease-out;
+
+    .bottom-heading-img {
+      width: 30vw;
+      height: 12vw;
+      // border: 1px solid #000;
+      object-fit: contain;
+      // opacity: 0;
+      // left: 4%;
+    }
+
+    .frame-img {
+      width: 80%;
+      object-fit: contain;
+      margin-left: 8%;
+    }
+
+    .university-list-img {
+      width: 80%;
+      object-fit: contain;
+      margin-left: 8%;
+    }
+  }
+}
+
+// ------------------------------------------------------
+@media (width < 680px) {
+  .guide-to-eduction-main-mobile {
     width: 100%;
     height: 100vh;
     // background-color: #000;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
 
-
     .left-section {
-        width: 50%;
+      width: 100%;
+      height: 38%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 5%;
+      // border: 1px solid #000;
+      padding: 10% 0 0 5%;
+      transition: all 0.2s ease-out;
+
+      .heading-main {
+        position: relative;
+        width: 70%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 5%;
         // border: 1px solid #000;
-        padding-left: 4%;
-        transition: all 0.2s ease-out;
 
-        .heading-main {
-            position: relative;
-            width: 35vw;
-            height: 11vw;
-            // border: 1px solid #000;
-
-            .heading-text {
-                position: absolute;
-                width: 100%;
-                object-fit: contain;
-                // opacity: 0;
-                transition: 0s ease-out;
-            }
+        .heading-text {
+          position: absolute;
+          width: 100%;
+          object-fit: contain;
+          // opacity: 0;
+          transition: 0s ease-out;
         }
+      }
 
-        p {
-            font-size: 1.2vw;
+      p {
+        font-size: 3.2vw;
+        font-weight: 500;
+        padding-right: 5%;
+      }
+
+      .btn-main {
+        position: relative;
+        width: 100%;
+        // height: 5vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // border: 1px solid #000;
+        padding: 0 4%;
+
+        .bachelors,
+        .masters {
+          // width: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 0.25em;
+          // background-color: #fff000;
+
+          .text-span {
+            color: #0d0d0d8e;
+            font-size: 3.2vw;
             font-weight: 500;
+          }
+
+          .btn-span {
+            font-size: 3.2vw;
+            color: #000;
+            font-weight: 500;
+            background-color: #d9d9d9;
+            padding: 0.2em 0.8em;
+            border-radius: 500px;
+            user-select: none;
+            cursor: pointer;
+            box-shadow: 0.04em 0.1em 1px #0000004e;
+            transition: 0s;
+
+            &:hover {
+              box-shadow: 0.04em 0.1em 1px #000000ae;
+            }
+          }
         }
 
-        .btn-main {
-            position: relative;
-            width: 60%;
-            // height: 5vw;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            // border: 1px solid #000;
-
-            .bachelors,
-            .masters {
-                // width: 40%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 0.25em;
-                // background-color: #fff000;
-
-                .text-span {
-                    color: #0d0d0d8e;
-                    font-size: 1.4vw;
-                    font-weight: 500;
-                }
-
-                .btn-span {
-                    font-size: 1.2vw;
-                    color: #000;
-                    font-weight: 500;
-                    background-color: #D9D9D9;
-                    padding: 0.2em 0.8em;
-                    border-radius: 500px;
-                    user-select: none;
-                    cursor: pointer;
-                    box-shadow: 0.05em 0.15em 1px #0000004e;
-                    transition: 0s;
-
-                    &:hover {
-                        box-shadow: 0.05em 0.15em 1px #000000ae;
-
-                    }
-
-                }
-
-            }
-
-            .cursor-icon {
-                position: absolute;
-                top: 65%;
-                width: 8vw;
-                height: 4vw;
-                // border: 1px solid #000;
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-                transform: translate(15vw, 25vh);
-                transition: 0.4s ease-in-out;
-
-            }
-
-
+        .cursor-icon {
+          position: absolute;
+          top: 80%;
+          width: 20vw;
+          height: 8vw;
+          // border: 1px solid #000;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          transform: translate(15vw, 25vh);
+          transition: 0.4s ease-in-out;
         }
-
+      }
     }
 
     // ---------------------------------------------
     .right-section {
-        position: relative;
-        width: 40%;
+      position: relative;
+      width: 100%;
+      height: 58%;
+      display: flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // background: linear-gradient(90deg, rgba(145, 148, 255, 1) 0%, rgba(39, 43, 153, 1) 100%);
+      overflow: hidden;
+      transition: all 0.2s ease-out;
+
+      .rect1 {
+        position: absolute;
+        top: 0;
+        z-index: 0;
+        right: 0;
+        width: 100%;
         height: 100%;
-        display: flex;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // background: linear-gradient(90deg, rgba(145, 148, 255, 1) 0%, rgba(39, 43, 153, 1) 100%);
-        overflow: hidden;
-        transition: all 0.2s ease-out;
+        border-radius: 50px 50px 0 0;
+      }
 
+      .hr-vector {
+        position: absolute;
+        left: 12%;
+        bottom: 0;
+        // width: 2vw;
+        height: 95%;
+        object-fit: contain;
+        // border: 1px solid #000;
+      }
 
-        .rect1 {
-            position: absolute;
-            bottom: 0;
-            z-index: 0;
-            right: 0;
-            width: 90%;
-            height: 99%;
-            border-radius: 100px 0 0 0;
-        }
+      .bachelor-frame,
+      .master-frame {
+        position: absolute;
+        left: 20%;
+        // width: 80%;
+        height: 97%;
+        object-fit: contain;
+        // border: 1px solid #000;
+        transition: 0.8s ease-in-out;
+      }
 
-        .hr-vector {
-            position: absolute;
-            left: 12%;
-            bottom: 0;
-            // width: 2vw;
-            height: 80%;
-            object-fit: contain;
-            // border: 1px solid #000;
-        }
+      .bachelor-frame {
+        bottom: 0;
+      }
 
-        .bachelor-frame,
-        .master-frame {
-            position: absolute;
-            left: 20%;
-            // width: 80%;
-            height: 80%;
-            object-fit: contain;
-            // border: 1px solid #000;
-            transition: 0.8s ease-in-out;
-        }
-
-        .bachelor-frame {
-            bottom: 0;
-
-        }
-
-        .master-frame {
-            bottom: -80%;
-        }
+      .master-frame {
+        bottom: -100%;
+      }
     }
 
     // ---------------------------------------------
 
     .bottom-section {
-        position: absolute;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      // background-color: #fff000;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding-left: 4%;
+      gap: 4%;
+      top: 140%;
+      transition: all 0.2s ease-out;
+
+      .bottom-heading-img {
+        width: 75%;
+        // height: 12vw;
+        // border: 1px solid #000;
+        object-fit: contain;
+        // opacity: 0;
+        // left: 4%;
+      }
+
+      .frame-img {
         width: 100%;
-        height: 100%;
-        // background-color: #fff000;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-        padding-left: 4%;
-        gap: 5%;
-        top: 140%;
-        transition: all 0.2s ease-out;
+        object-fit: contain;
+        // margin-left: 8%;
+      }
 
-        .bottom-heading-img {
-            width: 30vw;
-            height: 12vw;
-            // border: 1px solid #000;
-            object-fit: contain;
-            // opacity: 0;
-            // left: 4%;
-        }
-
-        .frame-img {
-            width: 80%;
-            object-fit: contain;
-            margin-left: 8%;
-        }
-
-        .university-list-img {
-            width: 80%;
-            object-fit: contain;
-            margin-left: 8%;
-        }
-
-    }
-}
-
-
-// ------------------------------------------------------
-@media (width < 680px) {
-    .guide-to-eduction-main-mobile {
+      .university-list-img {
         width: 100%;
-        height: 100vh;
-        // background-color: #000;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        overflow: hidden;
-
-
-        .left-section {
-            width: 100%;
-            height: 38%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 5%;
-            // border: 1px solid #000;
-            padding: 10% 0 0 4%;
-            transition: all 0.2s ease-out;
-
-            .heading-main {
-                position: relative;
-                width: 65%;
-                height: 100%;
-                // border: 1px solid #000;
-
-                .heading-text {
-                    position: absolute;
-                    width: 100%;
-                    object-fit: contain;
-                    // opacity: 0;
-                    transition: 0s ease-out;
-                }
-            }
-
-            p {
-                font-size: 2.8vw;
-                font-weight: 500;
-            }
-
-            .btn-main {
-                position: relative;
-                width: 100%;
-                // height: 5vw;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                // border: 1px solid #000;
-                padding: 0 4%;
-
-                .bachelors,
-                .masters {
-                    // width: 40%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 0.25em;
-                    // background-color: #fff000;
-
-                    .text-span {
-                        color: #0d0d0d8e;
-                        font-size: 3.2vw;
-                        font-weight: 500;
-                    }
-
-                    .btn-span {
-                        font-size: 3.2vw;
-                        color: #000;
-                        font-weight: 500;
-                        background-color: #D9D9D9;
-                        padding: 0.2em 0.8em;
-                        border-radius: 500px;
-                        user-select: none;
-                        cursor: pointer;
-                        box-shadow: 0.04em 0.1em 1px #0000004e;
-                        transition: 0s;
-
-                        &:hover {
-                            box-shadow: 0.04em 0.1em 1px #000000ae;
-
-                        }
-
-                    }
-
-                }
-
-                .cursor-icon {
-                    position: absolute;
-                    top: 80%;
-                    width: 20vw;
-                    height: 8vw;
-                    // border: 1px solid #000;
-                    background-position: center;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    transform: translate(15vw, 25vh);
-                    transition: 0.4s ease-in-out;
-
-                }
-
-
-            }
-
-        }
-
-        // ---------------------------------------------
-        .right-section {
-            position: relative;
-            width: 100%;
-            height: 58%;
-            display: flex;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // background: linear-gradient(90deg, rgba(145, 148, 255, 1) 0%, rgba(39, 43, 153, 1) 100%);
-            overflow: hidden;
-            transition: all 0.2s ease-out;
-
-
-            .rect1 {
-                position: absolute;
-                top: 0;
-                z-index: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 100px 100px 0 0;
-            }
-
-            .hr-vector {
-                position: absolute;
-                left: 12%;
-                bottom: 0;
-                // width: 2vw;
-                height: 95%;
-                object-fit: contain;
-                // border: 1px solid #000;
-            }
-
-            .bachelor-frame,
-            .master-frame {
-                position: absolute;
-                left: 20%;
-                // width: 80%;
-                height: 97%;
-                object-fit: contain;
-                // border: 1px solid #000;
-                transition: 0.8s ease-in-out;
-            }
-
-            .bachelor-frame {
-                bottom: 0;
-
-            }
-
-            .master-frame {
-                bottom: -100%;
-            }
-        }
-
-        // ---------------------------------------------
-
-        .bottom-section {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            // background-color: #fff000;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            padding-left: 4%;
-            gap: 10%;
-            top: 140%;
-            transition: all 0.2s ease-out;
-
-            .bottom-heading-img {
-                width: 75%;
-                // height: 12vw;
-                // border: 1px solid #000;
-                object-fit: contain;
-                // opacity: 0;
-                // left: 4%;
-            }
-
-            .frame-img {
-                width: 100%;
-                object-fit: contain;
-                // margin-left: 8%;
-            }
-
-            .university-list-img {
-                width: 100%;
-                object-fit: contain;
-                // margin-left: 8%;
-            }
-
-        }
+        object-fit: contain;
+        // margin-left: 8%;
+      }
     }
-
+  }
 }

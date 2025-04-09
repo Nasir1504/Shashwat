@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import "./TestiMob.scss";
 
-import { GrLinkNext,GrLinkPrevious } from "react-icons/gr";
-
+import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
 
 import Img1 from "../../assets/imgs/personImg1.png";
 import Starr from "../../assets/imgs/smoothStar.png";
 import MobileStand1 from "../../assets/imgs/MobileStand.png";
-import HalfStar from "../../assets/imgs/HalfStar.png";
+// import HalfStar from "../../assets/imgs/HalfStar.png";
 import Play from "../../assets/imgs/PlayBtn.png";
-import MobileStand from "../../assets/imgs/MobileStand.png";
+// import MobileStand from "../../assets/imgs/MobileStand.png";
 import LineBg1 from "../../assets/imgs/LineBg1.png";
 
 const TestiMob = () => {
@@ -17,12 +16,12 @@ const TestiMob = () => {
 
   // console.log(count,"Hello");
 
-  const handleCardPrev = ()=>{
-    setCount(count === 1? 1 : count - 1);
-  }
-  const handleCardNext = ()=>{
-    setCount(count === 5? 5 : count + 1);
-  }
+  const handleCardPrev = () => {
+    setCount(count === 1 ? 1 : count - 1);
+  };
+  const handleCardNext = () => {
+    setCount(count === 5 ? 5 : count + 1);
+  };
 
   return (
     <div id="testimonials-mob" className="testi-main-mb">
@@ -66,10 +65,10 @@ const TestiMob = () => {
               count === 1
                 ? "translate(0,5vw) scale(0.93)"
                 : count === 2
-                ? "translate(0,0) scale(1)"
-                : count >= 3 && "translate(-100vw,0) scale(1)",
+                  ? "translate(0,0) scale(1)"
+                  : count >= 3 && "translate(-100vw,0) scale(1)",
             zIndex: 4,
-            background: count >=2 && "rgb(45,48,128)"
+            background: count >= 2 && "rgb(45,48,128)",
           }}
         >
           <div className="icmb1">
@@ -101,12 +100,12 @@ const TestiMob = () => {
               count === 1
                 ? "translate(0,9vw) scale(0.87)"
                 : count === 2
-                ? "translate(0,5vw) scale(0.93)"
-                : count === 3
-                ? "translate(0,0) scale(1)"
-                : count >= 4 && "translate(-100vw,0) scale(1)",
+                  ? "translate(0,5vw) scale(0.93)"
+                  : count === 3
+                    ? "translate(0,0) scale(1)"
+                    : count >= 4 && "translate(-100vw,0) scale(1)",
             zIndex: 3,
-            background: count >=3 && "rgb(45,48,128)"
+            background: count >= 3 && "rgb(45,48,128)",
           }}
         >
           <div className="icmb1">
@@ -138,14 +137,14 @@ const TestiMob = () => {
               count === 1
                 ? "translate(0,13vw) scale(0.8)"
                 : count === 2
-                ? "translate(0,9vw) scale(0.87)"
-                : count === 3
-                ? "translate(0,5vw) scale(0.93)"
-                : count === 4
-                ? "translate(0vw,0) scale(1)"
-                : count === 5 && "translate(-100vw,0) scale(1)",
+                  ? "translate(0,9vw) scale(0.87)"
+                  : count === 3
+                    ? "translate(0,5vw) scale(0.93)"
+                    : count === 4
+                      ? "translate(0vw,0) scale(1)"
+                      : count === 5 && "translate(-100vw,0) scale(1)",
             zIndex: 2,
-            background: count >=4 && "rgb(45,48,128)"
+            background: count >= 4 && "rgb(45,48,128)",
           }}
         >
           <div className="icmb1">
@@ -177,14 +176,14 @@ const TestiMob = () => {
               count === 1
                 ? "translate(0,17vw) scale(0.73)"
                 : count === 2
-                ? "translate(0,13vw) scale(0.8)"
-                : count === 3
-                ? "translate(0,9vw) scale(0.87)"
-                : count === 4
-                ? "translate(0,5vw) scale(0.93)"
-                : count === 5 && "translate(0vw,0) scale(1)",
+                  ? "translate(0,13vw) scale(0.8)"
+                  : count === 3
+                    ? "translate(0,9vw) scale(0.87)"
+                    : count === 4
+                      ? "translate(0,5vw) scale(0.93)"
+                      : count === 5 && "translate(0vw,0) scale(1)",
             zIndex: 1,
-            background: count >=5 && "rgb(45,48,128)"
+            background: count >= 5 && "rgb(45,48,128)",
           }}
         >
           <div className="icmb1">
@@ -210,7 +209,9 @@ const TestiMob = () => {
           </div>
         </div>
         <div className="caraousel-cont-mb">
-        <div className="prevBtn" onClick={handleCardPrev}><GrLinkPrevious /></div>
+          <div className="prevBtn" onClick={handleCardPrev}>
+            <GrLinkPrevious />
+          </div>
           <span
             className="span-cc-mb"
             style={{ background: count === 1 && "#2D3080" }}
@@ -246,7 +247,9 @@ const TestiMob = () => {
               setCount(5);
             }}
           ></span>
-          <div className="nextBtn" onClick={handleCardNext}><GrLinkNext /></div>
+          <div className="nextBtn" onClick={handleCardNext}>
+            <GrLinkNext />
+          </div>
         </div>
       </div>
       <div className="s-f-div3">

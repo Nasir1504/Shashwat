@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import logo from "../../assets/logo.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";

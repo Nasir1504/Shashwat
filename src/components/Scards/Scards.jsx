@@ -6,7 +6,7 @@ import BgImg from "../../assets/imgs/shashBgImg1.png";
 import C1 from "../../assets/imgs/FrameC11.png";
 // import C2 from "../../assets/imgs/FrameC12.png";
 // import Ellip from "../../assets/imgs/ellipViolet.png";
-import Logo from "../../assets/imgs/shashLogo.png";
+// import Logo from "../../assets/imgs/shashLogo.png";
 import Logo1 from "../../assets/imgs/shashLogo1.png";
 import CardComp from "./CardComp/CardComp";
 import LineBg from "../../imgs/whyChooseUs/wcu-line2.png";
@@ -39,7 +39,7 @@ const Scards = ({ homeRef }) => {
             yPercent: -160,
             // ease: "none",
           },
-          "-=2"
+          "-=2",
         )
         .to(".ds2-p", {
           duration: 10,
@@ -65,7 +65,7 @@ const Scards = ({ homeRef }) => {
             x: "-50vw",
             // ease: "power2",
           },
-          "<"
+          "<",
         );
       // .fromTo(
       //   ".conty1",

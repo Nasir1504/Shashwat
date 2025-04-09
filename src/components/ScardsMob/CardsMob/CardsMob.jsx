@@ -20,10 +20,10 @@ const CardsMob = ({ C, Logo, bool, X, id }) => {
         {id === 1 || id === 2
           ? "Foundations:"
           : id === 3
-          ? "Proficiency:"
-          : id === 4 || id === 6
-          ? "Mastery:"
-          : id === 5 && "Advanced:"}{" "}
+            ? "Proficiency:"
+            : id === 4 || id === 6
+              ? "Mastery:"
+              : id === 5 && "Advanced:"}{" "}
         <br />{" "}
         {id === 1 || id === 2 ? (
           <span style={{ borderBottom: !bool && "2px solid white" }}>

@@ -41,7 +41,7 @@
   .dbLowerText {
     width: 100%;
     margin-top: 25px;
-    @include sm{
+    @include sm {
       margin-top: 35px;
     }
     .dbltHeading {
@@ -59,7 +59,7 @@
         top: 50%;
         z-index: -1;
         clip-path: polygon(0 0, 83% 0, 100% 100%, 12% 100%);
-        @include sm{
+        @include sm {
           top: 24%;
           width: 45%;
         }
@@ -67,8 +67,8 @@
     }
     .dbltPara {
       width: 95%;
-      @include sm{
-     width: 100%;
+      @include sm {
+        width: 100%;
       }
       p {
         display: flex;
@@ -82,7 +82,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        @include md{
+        @include md {
           font-size: 17px;
           align-items: flex-start;
         }
@@ -92,11 +92,11 @@
             border-radius: 2px;
             background-color: #3b88c3;
             color: white;
-            @include md{
+            @include md {
               margin-top: 5px;
               font-size: 28px;
             }
-            @include md{
+            @include md {
               margin-top: 8px;
               font-size: 28px;
             }

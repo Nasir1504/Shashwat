@@ -9,27 +9,27 @@
     margin: 20px 0px 30px 0px;
     position: relative;
     width: max-content;
-    @include sm{
+    @include sm {
       margin: 30px 0px 30px 0px;
       font-size: 24px;
       width: 100%;
     }
     &::after {
-        content: "";
-        width: 30%;
-        height: 10px;
-        background-color: #ffc537;
-        position: absolute;
-        right:1%;
-        top: 50%;
-        z-index: -1;
-        clip-path: polygon(0 0, 83% 0, 100% 100%, 12% 100%);
-        @include sm{
-          top: 72%;
-          right: 47%;
-          width: 25%;
-        }
+      content: "";
+      width: 30%;
+      height: 10px;
+      background-color: #ffc537;
+      position: absolute;
+      right: 1%;
+      top: 50%;
+      z-index: -1;
+      clip-path: polygon(0 0, 83% 0, 100% 100%, 12% 100%);
+      @include sm {
+        top: 72%;
+        right: 47%;
+        width: 25%;
       }
+    }
   }
   .dbPara {
     width: 95%;
@@ -45,7 +45,7 @@
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      @include sm{
+      @include sm {
         align-items: flex-start;
         font-size: 17px;
       }
@@ -55,11 +55,11 @@
           border-radius: 2px;
           background-color: #3b88c3;
           color: white;
-          @include md{
+          @include md {
             margin-top: 5px;
             font-size: 28px;
           }
-          @include sm{
+          @include sm {
             margin-top: 8px;
             font-size: 28px;
           }

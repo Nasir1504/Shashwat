@@ -1,4 +1,120 @@
 .why-germany-main {
+  width: 100%;
+  height: 100vh;
+  // background-color: #2D3080;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .top-section {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    // border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 4%;
+
+    h3 {
+      width: 30%;
+      font-size: 3vw;
+      color: #000;
+      font-weight: 500;
+      display: flex;
+      // border: 1px solid #000;
+      gap: 5%;
+
+      .img-span {
+        width: 3.5vw;
+        aspect-ratio: 1;
+        // background-color: #fff;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    p {
+      font-size: 1.4vw;
+      color: #000;
+    }
+
+    button {
+      position: absolute;
+      height: 3.2vw;
+      top: 43%;
+      right: 4%;
+      z-index: 1;
+      padding: 0 1.4em;
+      background-color: #ffb500;
+      border-radius: 500px;
+      font-size: 1vw;
+      color: #000;
+      font-weight: 600;
+      box-shadow: 0.2em 0.2em 2px #0000007c;
+    }
+  }
+
+  .bottom-section {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(
+      180deg,
+      rgba(145, 148, 255, 1) 0%,
+      rgba(39, 43, 153, 1) 180%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .ellipse {
+      position: absolute;
+      top: -3vw;
+      left: 0vw;
+      width: 100vw;
+      height: 6vw;
+      z-index: 1;
+      background-color: #fff;
+      border-radius: 100%;
+      // display: none;
+    }
+
+    .card-slider {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      // background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // overflow: hidden;
+      scroll-snap-align: center;
+
+      .slides {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2%;
+        // overflow-x: auto;
+        // overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        transition: all 0.2s ease-out;
+      }
+    }
+  }
+}
+
+// ------------------MEDIA (680px)-----------------------
+@media (width < 680px) {
+  .why-germany-main {
     width: 100%;
     height: 100vh;
     // background-color: #2D3080;
@@ -9,504 +125,370 @@
     overflow: hidden;
 
     .top-section {
-        position: relative;
+      position: relative;
+      width: 100%;
+      height: 30%;
+      // border: 1px solid #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 5%;
+
+      h3 {
         width: 100%;
-        height: 40%;
-        // border: 1px solid #000;
+        font-size: 6vw;
+        color: #000;
+        font-weight: 500;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-        padding-left: 4%;
+        // border: 1px solid #000;
+        gap: 1%;
 
-        h3 {
-            width: 30%;
-            font-size: 3vw;
-            color: #000;
-            font-weight: 500;
-            display: flex;
-            // border: 1px solid #000;
-            gap: 5%;
-
-            .img-span {
-                width: 3.5vw;
-                aspect-ratio: 1;
-                // background-color: #fff;
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-            }
+        .img-span {
+          width: 6vw;
+          aspect-ratio: 1;
+          // background-color: #fff;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
         }
+      }
 
-        p {
-            font-size: 1.4vw;
-            color: #000;
-        }
+      p {
+        font-size: 2.8vw;
+        color: #000;
+      }
 
-        button {
-            position: absolute;
-            height: 3.2vw;
-            top: 43%;
-            right: 4%;
-            z-index: 1;
-            padding: 0 1.4em;
-            background-color: #FFB500;
-            border-radius: 500px;
-            font-size: 1vw;
-            color: #000;
-            font-weight: 600;
-            box-shadow: 0.2em 0.2em 2px #0000007c;
-        }
-
+      button {
+        position: absolute;
+        height: 5.2vw;
+        top: 73%;
+        right: 4%;
+        z-index: 1;
+        padding: 0 1.4em;
+        background-color: #ffb500;
+        border-radius: 500px;
+        font-size: 3vw;
+        color: #000;
+        font-weight: 500;
+        box-shadow: 0.1em 0.1em 1px #0000007c;
+      }
     }
 
     .bottom-section {
+      position: relative;
+      width: 100%;
+      height: 70%;
+      background: linear-gradient(
+        180deg,
+        rgba(145, 148, 255, 1) 0%,
+        rgba(39, 43, 153, 1) 180%
+      );
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      // border: 1px solid #000;
+
+      .ellipse {
+        position: absolute;
+        top: -6vw;
+        left: -4vw;
+        width: 110vw;
+        height: 10vw;
+        z-index: 1;
+        background-color: #fff;
+        border-radius: 100%;
+        // display: none;
+      }
+
+      .card-slider {
         position: relative;
         width: 100%;
-        height: 60%;
-        background: linear-gradient(180deg, rgba(145, 148, 255, 1) 0%, rgba(39, 43, 153, 1) 180%);
+        height: 100%;
+        // background-color: #000;
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
+        // overflow: hidden;
+        scroll-snap-align: center;
 
-        .ellipse {
-            position: absolute;
-            top: -3vw;
-            left: 0vw;
-            width: 100vw;
-            height: 6vw;
-            z-index: 1;
-            background-color: #fff;
-            border-radius: 100%;
-            // display: none;
+        .slides {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          gap: 6%;
+          // overflow-x: auto;
+          // overflow-y: hidden;
+          scroll-snap-type: x mandatory;
+          transition: all 0.2s ease-out;
         }
-
-        .card-slider {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            // background-color: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // overflow: hidden;
-            scroll-snap-align: center;
-
-            .slides {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                gap: 2%;
-                // overflow-x: auto;
-                // overflow-y: hidden;
-                scroll-snap-type: x mandatory;
-                transition: all 0.2s ease-out;
-
-            }
-
-        }
+      }
     }
-
-}
-
-// ------------------MEDIA (680px)-----------------------
-@media (width < 680px) {
-    .why-germany-main {
-        width: 100%;
-        height: 100vh;
-        // background-color: #2D3080;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-
-        .top-section {
-            position: relative;
-            width: 100%;
-            height: 30%;
-            // border: 1px solid #000;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 0 5%;
-
-            h3 {
-                width: 100%;
-                font-size: 6vw;
-                color: #000;
-                font-weight: 500;
-                display: flex;
-                // border: 1px solid #000;
-                gap: 1%;
-
-                .img-span {
-                    width: 6vw;
-                    aspect-ratio: 1;
-                    // background-color: #fff;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-            }
-
-            p {
-                font-size: 2.8vw;
-                color: #000;
-            }
-
-            button {
-                position: absolute;
-                height: 5.2vw;
-                top: 73%;
-                right: 4%;
-                z-index: 1;
-                padding: 0 1.4em;
-                background-color: #FFB500;
-                border-radius: 500px;
-                font-size: 3vw;
-                color: #000;
-                font-weight: 500;
-                box-shadow: 0.1em 0.1em 1px #0000007c;
-            }
-
-        }
-
-        .bottom-section {
-            position: relative;
-            width: 100%;
-            height: 70%;
-            background: linear-gradient(180deg, rgba(145, 148, 255, 1) 0%, rgba(39, 43, 153, 1) 180%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-
-            .ellipse {
-                position: absolute;
-                top: -10vw;
-                left: 0vw;
-                width: 100vw;
-                height: 16vw;
-                z-index: 1;
-                background-color: #fff;
-                border-radius: 100%;
-                // display: none;
-            }
-
-            .card-slider {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                // background-color: #000;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                // overflow: hidden;
-                scroll-snap-align: center;
-
-                .slides {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    align-items: flex-start;
-                    gap: 6%;
-                    // overflow-x: auto;
-                    // overflow-y: hidden;
-                    scroll-snap-type: x mandatory;
-                    transition: all 0.2s ease-out;
-
-                }
-
-            }
-        }
-
-    }
-
+  }
 }
 
 // =================== WG CARD ========================
 
 .wg-card-main {
+  position: relative;
+  min-width: 22vw;
+  height: 110%;
+  // background-color: #2B2E7C;
+  border-radius: 3.5vw;
+  box-shadow: 0.4em 0.2em 4px #00000047;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+
+  // -------------------------------
+
+  .heading-section {
+    position: absolute;
+    top: 34%;
+    width: 100%;
+    height: 7vw;
+    // border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 4%;
+
+    .icon-img {
+      position: absolute;
+      width: 12%;
+      top: -40%;
+      left: 4%;
+      user-select: none;
+      transition: all 0.1s ease-out;
+      // border: 4px solid #000;
+    }
+
+    .heading-text {
+      // color: #fff;
+      width: 60%;
+      line-height: 1.2;
+      transition: all 0.1s ease-out;
+      // border: 1px solid #000;
+
+      .text-span {
+        font-size: 1.1vw;
+        font-weight: 500;
+        user-select: none;
+      }
+
+      .text-span2 {
+        font-size: 2vw;
+        font-weight: 600;
+        border-bottom: 1px solid;
+        user-select: none;
+      }
+    }
+
+    // ----------CARD NUMB------------------
+
+    .card-no {
+      position: relative;
+      width: 35%;
+      height: 70%;
+      // background-color: #fff;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      // border: 1px solid #000;
+
+      .span1 {
+        position: absolute;
+        font-size: 5.5vw;
+        font-weight: 900;
+        user-select: none;
+        transition: all 0.1s ease-out;
+
+        // fill-color: #00000010;
+        // stroke-width: 1px;
+        // stroke-color: #ffffff05;
+        // -webkit-text-fill-color: #00000010;
+        // -webkit-text-stroke-width: 1px;
+        // -webkit-text-stroke-color: #ffffff05;
+      }
+    }
+  }
+
+  // -------------------------------
+
+  h3 {
+    position: absolute;
+    bottom: 25%;
+    font-size: 5vw;
+    font-weight: 600;
+    // color: #ffffff12;
+    user-select: none;
+    text-transform: uppercase;
+  }
+
+  // -------------------------------
+  .frame-sec {
+    position: absolute;
+    left: 4%;
+    bottom: 10%;
+    width: 92%;
+    height: 8.8vw;
+    // background-color: #fff;
+    border-radius: 0.6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+
+    .inner-frame {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5vw;
+      overflow: hidden;
+
+      .frame-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        user-select: none;
+        transition: all 0.1s ease-out;
+      }
+    }
+  }
+}
+
+// -------------------MEDIA (680px)----------------------
+@media (width < 680px) {
+  .wg-card-main {
     position: relative;
-    min-width: 22vw;
-    height: 110%;
+    width: 44%;
+    height: 60%;
     // background-color: #2B2E7C;
     border-radius: 3.5vw;
     box-shadow: 0.4em 0.2em 4px #00000047;
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: center;
+    // scroll-snap-align: center;
 
     // -------------------------------
 
     .heading-section {
+      position: absolute;
+      top: 24%;
+      width: 100%;
+      height: 10vw;
+      // border: 1px solid #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-left: 4%;
+
+      .icon-img {
         position: absolute;
-        top: 34%;
-        width: 100%;
-        height: 7vw;
+        width: 22%;
+        top: -120%;
+        left: 4%;
+        user-select: none;
+        transition: all 0.1s ease-out;
+        // border: 4px solid #000;
+      }
+
+      .heading-text {
+        // color: #fff;
+        width: 60%;
+        line-height: 1.2;
+        transition: all 0.1s ease-out;
         // border: 1px solid #000;
+
+        .text-span {
+          font-size: 4vw;
+          font-weight: 500;
+          user-select: none;
+        }
+
+        .text-span2 {
+          font-size: 6vw;
+          font-weight: 600;
+          border-bottom: 1px solid;
+          user-select: none;
+        }
+      }
+
+      // ----------CARD NUMB------------------
+
+      .card-no {
+        position: relative;
+        width: 35%;
+        height: 70%;
+        // background-color: #fff;
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding-left: 4%;
+        justify-content: flex-start;
+        align-items: center;
+        // border: 1px solid #000;
 
-        .icon-img {
-            position: absolute;
-            width: 12%;
-            top: -40%;
-            left: 4%;
-            user-select: none;
-            transition: all 0.1s ease-out;
-            // border: 4px solid #000;
+        .span1 {
+          position: absolute;
+          top: -200%;
+          font-size: 10.5vw;
+          font-weight: 900;
+          user-select: none;
+          transition: all 0.1s ease-out;
 
+          // fill-color: #00000010;
+          // stroke-width: 1px;
+          // stroke-color: #ffffff05;
+          // -webkit-text-fill-color: #00000010;
+          // -webkit-text-stroke-width: 1px;
+          // -webkit-text-stroke-color: #ffffff05;
         }
-
-        .heading-text {
-            // color: #fff;
-            width: 60%;
-            line-height: 1.2;
-            transition: all 0.1s ease-out;
-            // border: 1px solid #000;
-
-
-            .text-span {
-                font-size: 1.1vw;
-                font-weight: 500;
-                user-select: none;
-
-            }
-
-            .text-span2 {
-                font-size: 2vw;
-                font-weight: 600;
-                border-bottom: 1px solid;
-                user-select: none;
-
-            }
-        }
-
-        // ----------CARD NUMB------------------
-
-        .card-no {
-            position: relative;
-            width: 35%;
-            height: 70%;
-            // background-color: #fff;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            // border: 1px solid #000;
-
-            .span1 {
-                position: absolute;
-                font-size: 5.5vw;
-                font-weight: 900;
-                user-select: none;
-                transition: all 0.1s ease-out;
-
-
-                // fill-color: #00000010;
-                // stroke-width: 1px;
-                // stroke-color: #ffffff05;
-                // -webkit-text-fill-color: #00000010;
-                // -webkit-text-stroke-width: 1px;
-                // -webkit-text-stroke-color: #ffffff05;
-            }
-
-        }
+      }
     }
 
     // -------------------------------
 
     h3 {
-        position: absolute;
-        bottom: 25%;
-        font-size: 5vw;
-        font-weight: 600;
-        // color: #ffffff12;
-        user-select: none;
-        text-transform: uppercase;
+      position: absolute;
+      bottom: 25%;
+      font-size: 5vw;
+      font-weight: 600;
+      // color: #ffffff12;
+      user-select: none;
+      text-transform: uppercase;
     }
 
     // -------------------------------
     .frame-sec {
-        position: absolute;
-        left: 4%;
-        bottom: 10%;
-        width: 92%;
-        height: 8.8vw;
-        // background-color: #fff;
-        border-radius: 0.6vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2%;
+      position: absolute;
+      left: 4%;
+      bottom: 5%;
+      width: 92%;
+      height: 28vw;
+      // background-color: #fff;
+      border-radius: 1.8vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4%;
 
-        .inner-frame {
-            width: 100%;
-            height: 100%;
-            border-radius: 0.5vw;
-            overflow: hidden;
+      .inner-frame {
+        width: 100%;
+        height: 100%;
+        border-radius: 1.7vw;
+        overflow: hidden;
 
-            .frame-img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                user-select: none;
-                transition: all 0.1s ease-out;
-
-            }
-
+        .frame-img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          user-select: none;
+          transition: all 0.1s ease-out;
         }
+      }
     }
-
-}
-
-// -------------------MEDIA (680px)----------------------
-@media (width < 680px) {
-    .wg-card-main {
-        position: relative;
-        width: 44%;
-        height: 60%;
-        // background-color: #2B2E7C;
-        border-radius: 3.5vw;
-        box-shadow: 0.4em 0.2em 4px #00000047;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // scroll-snap-align: center;
-
-        // -------------------------------
-
-        .heading-section {
-            position: absolute;
-            top: 24%;
-            width: 100%;
-            height: 10vw;
-            // border: 1px solid #000;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding-left: 4%;
-
-            .icon-img {
-                position: absolute;
-                width: 22%;
-                top: -120%;
-                left: 4%;
-                user-select: none;
-                transition: all 0.1s ease-out;
-                // border: 4px solid #000;
-
-            }
-
-            .heading-text {
-                // color: #fff;
-                width: 60%;
-                line-height: 1.2;
-                transition: all 0.1s ease-out;
-                // border: 1px solid #000;
-
-
-                .text-span {
-                    font-size: 4vw;
-                    font-weight: 500;
-                    user-select: none;
-
-                }
-
-                .text-span2 {
-                    font-size: 6vw;
-                    font-weight: 600;
-                    border-bottom: 1px solid;
-                    user-select: none;
-
-                }
-            }
-
-            // ----------CARD NUMB------------------
-
-            .card-no {
-                position: relative;
-                width: 35%;
-                height: 70%;
-                // background-color: #fff;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                // border: 1px solid #000;
-
-                .span1 {
-                    position: absolute;
-                    top: -200%;
-                    font-size: 10.5vw;
-                    font-weight: 900;
-                    user-select: none;
-                    transition: all 0.1s ease-out;
-
-
-                    // fill-color: #00000010;
-                    // stroke-width: 1px;
-                    // stroke-color: #ffffff05;
-                    // -webkit-text-fill-color: #00000010;
-                    // -webkit-text-stroke-width: 1px;
-                    // -webkit-text-stroke-color: #ffffff05;
-                }
-
-            }
-        }
-
-        // -------------------------------
-
-        h3 {
-            position: absolute;
-            bottom: 25%;
-            font-size: 5vw;
-            font-weight: 600;
-            // color: #ffffff12;
-            user-select: none;
-            text-transform: uppercase;
-        }
-
-        // -------------------------------
-        .frame-sec {
-            position: absolute;
-            left: 4%;
-            bottom: 5%;
-            width: 92%;
-            height: 28vw;
-            // background-color: #fff;
-            border-radius: 1.8vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 4%;
-
-            .inner-frame {
-                width: 100%;
-                height: 100%;
-                border-radius: 1.7vw;
-                overflow: hidden;
-
-                .frame-img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    user-select: none;
-                    transition: all 0.1s ease-out;
-
-                }
-
-            }
-        }
-
-    }
+  }
 }

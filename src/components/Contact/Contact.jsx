@@ -24,7 +24,7 @@ const Contact = () => {
       tl2.to(".contactHeading, .contactSubheading", { y: 0, opacity: 1 });
       tl2.to(".cbLeft, .cbRight", { x: 0, opacity: 1 });
     },
-    { scope: contactRef }
+    { scope: contactRef },
   );
 
   return (

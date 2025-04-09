@@ -1,46 +1,43 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
 //styles
-import './consultancy-solutions.scss';
+import "./consultancy-solutions.scss";
 
+import { useLocation } from "react-router-dom";
 
-import { useLocation } from 'react-router-dom';
-
-import { Stickyroll } from '@stickyroll/react';
+import { Stickyroll } from "@stickyroll/react";
 
 //components
-import TopSection from './Top-Section/TopSection';
-import IndividualAiming from './Individual-Aiming/IndividualAiming';
-import Opportunities from './Opportunities/Opportunities';
-import EligibilityCriteria from './Eligibility-Criteria/EligibilityCriteria';
-import Sprachschule from './Sprachschule/Sprachschule';
-import FAQ from './FAQ/FAQ';
-import NavBar from './Nav-Bar/NavBar';
-import Testimonial from '../../components/Testimonial/Testimonial';
-import TestiMob from '../../components/TestiMob/TestiMob';
-import Contact from '../../components/Contact/Contact';
-import { Footer } from '../../components/Footer/Footer';
-import { FooterMob } from '../../components/Footer/FooterMob';
-
+import TopSection from "./Top-Section/TopSection";
+import IndividualAiming from "./Individual-Aiming/IndividualAiming";
+import Opportunities from "./Opportunities/Opportunities";
+import EligibilityCriteria from "./Eligibility-Criteria/EligibilityCriteria";
+import Sprachschule from "./Sprachschule/Sprachschule";
+import FAQ from "./FAQ/FAQ";
+import NavBar from "./Nav-Bar/NavBar";
+import Testimonial from "../../components/Testimonial/Testimonial";
+import TestiMob from "../../components/TestiMob/TestiMob";
+import Contact from "../../components/Contact/Contact";
+import { Footer } from "../../components/Footer/Footer";
+import { FooterMob } from "../../components/Footer/FooterMob";
 
 export default function ConsultancySolution({ query }) {
   const consultancySolRef = useRef();
   const [progress1, setProgress1] = useState({
-    Progress: '',
-    Page: ''
+    Progress: "",
+    Page: "",
   });
 
   const [progress2, setProgress2] = useState({
-    Progress: '',
-    Page: ''
+    Progress: "",
+    Page: "",
   });
   const [progress3, setProgress3] = useState({
-    Progress: '',
-    Page: ''
+    Progress: "",
+    Page: "",
   });
 
   const { pathname } = useLocation();
-
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -68,10 +65,9 @@ export default function ConsultancySolution({ query }) {
         onProgress={(progress, page, index) => {
           setProgress1({
             Page: page,
-            Progress: progress
-          })
+            Progress: progress,
+          });
         }}
-
       >
         <div className="scroll-comp-one">
           <Opportunities progress={progress1} query={query} />
@@ -83,18 +79,16 @@ export default function ConsultancySolution({ query }) {
       <Stickyroll
         pages={1}
         factor={4}
-
         onProgress={(progress, page, index) => {
           setProgress2({
             Page: page,
-            Progress: progress
-          })
+            Progress: progress,
+          });
         }}
       >
         <div className="scroll-comp-one">
           <EligibilityCriteria progress={progress2} query={query} />
         </div>
-
       </Stickyroll>
 
       {/* ------------------------------------------------ */}
@@ -102,12 +96,11 @@ export default function ConsultancySolution({ query }) {
       <Stickyroll
         pages={1}
         factor={1}
-
         onProgress={(progress, page, index) => {
           setProgress3({
             Page: page,
-            Progress: progress
-          })
+            Progress: progress,
+          });
         }}
       >
         <div className="scroll-comp-one">
@@ -115,29 +108,18 @@ export default function ConsultancySolution({ query }) {
         </div>
       </Stickyroll>
 
-      <div className="space"
+      <div
+        className="space"
         style={{
-          height: '10vh'
+          height: "10vh",
         }}
       />
 
-
       <FAQ query={query} />
 
-
-      {
-        !query ?
-          < Testimonial />
-          :
-          <TestiMob />
-      }
+      {!query ? <Testimonial /> : <TestiMob />}
       <Contact />
-      {
-        !query ?
-          <Footer />
-          :
-          <FooterMob />
-      }
+      {!query ? <Footer /> : <FooterMob />}
     </div>
-  )
+  );
 }

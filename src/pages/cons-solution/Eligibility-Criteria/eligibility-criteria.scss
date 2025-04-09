@@ -1,151 +1,132 @@
 .eligibility-criteria-main {
+  width: 100%;
+  height: 100vh;
+  // background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+
+  .left-section {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5%;
+    border: 1px solid #000;
+    padding-left: 4%;
+    transition: all 0.2s ease-out;
+
+    .ec-heading-img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  // ---------------------------------------------
+  .right-section {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: linear-gradient(90deg, rgba(145, 148, 255, 1) 0%, rgba(39, 43, 153, 1) 100%);
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+    // border: 1px solid #000;
+
+    .ec-details-img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  // ---------------------------------------------
+
+  .bottom-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // background-color: #fff000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 5%;
+    top: 140%;
+    transition: all 0.2s ease-out;
+  }
+}
+
+@media (width < 680px) {
+  .eligibility-criteria-main {
     width: 100%;
     height: 100vh;
     // background-color: #000;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
 
-
     .left-section {
-        width: 40%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 5%;
-        border: 1px solid #000;
-        padding-left: 4%;
-        transition: all 0.2s ease-out;
+      width: 100%;
+      height: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 5%;
+      // border: 1px solid #000;
+      border: none;
+      padding-left: 4%;
+      transition: all 0.2s ease-out;
 
-      .ec-heading-img{
-        width: 100%;
+      .ec-heading-img {
+        width: 90%;
         object-fit: contain;
-
       }
-
     }
 
     // ---------------------------------------------
     .right-section {
-        position: relative;
-        width: 50%;
-        height: 100%;
-        display: flex;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // background: linear-gradient(90deg, rgba(145, 148, 255, 1) 0%, rgba(39, 43, 153, 1) 100%);
-        overflow: hidden;
-        transition: all 0.2s ease-out;
-        // border: 1px solid #000;
+      position: relative;
+      width: 100%;
+      height: 40%;
+      display: flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // background: linear-gradient(90deg, rgba(145, 148, 255, 1) 0%, rgba(39, 43, 153, 1) 100%);
+      overflow: hidden;
+      transition: all 0.2s ease-out;
+      // border: 1px solid #000;
 
-        .ec-details-img{
-            width: 100%;
-            object-fit: contain;
-        }
-
-
-      
+      .ec-details-img {
+        width: 100%;
+        object-fit: contain;
+        padding-left: 2%;
+      }
     }
 
     // ---------------------------------------------
 
     .bottom-section {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        // background-color: #fff000;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
-        gap: 5%;
-        top: 140%;
-        transition: all 0.2s ease-out;
-
-       
-
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      // background-color: #fff000;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      gap: 5%;
+      top: 140%;
+      transition: all 0.2s ease-out;
     }
-}
-
-@media (width < 680px) {
-    .eligibility-criteria-main {
-        width: 100%;
-        height: 100vh;
-        // background-color: #000;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    
-    
-        .left-section {
-            width: 100%;
-            height: 20%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 5%;
-            // border: 1px solid #000;
-            border: none;
-            padding-left: 4%;
-            transition: all 0.2s ease-out;
-    
-          .ec-heading-img{
-            width: 90%;
-            object-fit: contain;
-    
-          }
-    
-        }
-    
-        // ---------------------------------------------
-        .right-section {
-            position: relative;
-            width: 100%;
-            height: 40%;
-            display: flex;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            // background: linear-gradient(90deg, rgba(145, 148, 255, 1) 0%, rgba(39, 43, 153, 1) 100%);
-            overflow: hidden;
-            transition: all 0.2s ease-out;
-            // border: 1px solid #000;
-    
-            .ec-details-img{
-                width: 100%;
-                object-fit: contain;
-                padding-left: 2%;
-            }
-    
-    
-          
-        }
-    
-        // ---------------------------------------------
-    
-        .bottom-section {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            // background-color: #fff000;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            gap: 5%;
-            top: 140%;
-            transition: all 0.2s ease-out;
-    
-           
-    
-        }
-    }
-
+  }
 }

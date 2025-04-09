@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Gilroy";
   src: url("../src/assets/fonts/Gilroy-ExtraBold.eot");
-  src: url("../src/assets/fonts/Gilroy-ExtraBold.eot?#iefix")
+  src:
+    url("../src/assets/fonts/Gilroy-ExtraBold.eot?#iefix")
       format("embedded-opentype"),
     url("../src/assets/fonts/Gilroy-ExtraBold.woff2") format("woff2"),
     url("../src/assets/fonts/Gilroy-ExtraBold.woff") format("woff"),
@@ -16,7 +17,8 @@
 @font-face {
   font-family: "Gilroy";
   src: url("../src/assets/fonts/Gilroy-Light.eot");
-  src: url("../src/assets/fonts/Gilroy-Light.eot?#iefix")
+  src:
+    url("../src/assets/fonts/Gilroy-Light.eot?#iefix")
       format("embedded-opentype"),
     url("../src/assets/fonts/Gilroy-Light.woff2") format("woff2"),
     url("../src/assets/fonts/Gilroy-Light.woff") format("woff"),
@@ -30,7 +32,8 @@
 @font-face {
   font-family: "Gilroy";
   src: url("../src/assets/fonts/Gilroy-Medium.eot");
-  src: url("../src/assets/fonts/Gilroy-Medium.eot?#iefix")
+  src:
+    url("../src/assets/fonts/Gilroy-Medium.eot?#iefix")
       format("embedded-opentype"),
     url("../src/assets/fonts/Gilroy-Medium.woff2") format("woff2"),
     url("../src/assets/fonts/Gilroy-Medium.woff") format("woff"),
@@ -44,7 +47,8 @@
 @font-face {
   font-family: "Gilroy";
   src: url("../src/assets/fonts/Gilroy-Regular.eot");
-  src: url("../src/assets/fonts/Gilroy-Regular.eot?#iefix")
+  src:
+    url("../src/assets/fonts/Gilroy-Regular.eot?#iefix")
       format("embedded-opentype"),
     url("../src/assets/fonts/Gilroy-Regular.woff2") format("woff2"),
     url("../src/assets/fonts/Gilroy-Regular.woff") format("woff"),
@@ -58,7 +62,8 @@
 @font-face {
   font-family: "Gilroy";
   src: url("../src/assets/fonts/Gilroy-SemiBold.eot");
-  src: url("../src/assets/fonts/Gilroy-SemiBold.eot?#iefix")
+  src:
+    url("../src/assets/fonts/Gilroy-SemiBold.eot?#iefix")
       format("embedded-opentype"),
     url("../src/assets/fonts/Gilroy-SemiBold.woff2") format("woff2"),
     url("../src/assets/fonts/Gilroy-SemiBold.woff") format("woff"),
@@ -72,7 +77,8 @@
 @font-face {
   font-family: "Gilroy";
   src: url("../src/assets/fonts/Gilroy-SemiBoldItalic.eot");
-  src: url("../src/assets/fonts/Gilroy-SemiBoldItalic.eot?#iefix")
+  src:
+    url("../src/assets/fonts/Gilroy-SemiBoldItalic.eot?#iefix")
       format("embedded-opentype"),
     url("../src/assets/fonts/Gilroy-SemiBoldItalic.woff2") format("woff2"),
     url("../src/assets/fonts/Gilroy-SemiBoldItalic.woff") format("woff"),
@@ -87,7 +93,8 @@
 @font-face {
   font-family: "Gilroy";
   src: url("../src/assets/fonts/Gilroy-Bold.eot");
-  src: url("../src/assets/fonts/Gilroy-Bold.eot?#iefix")
+  src:
+    url("../src/assets/fonts/Gilroy-Bold.eot?#iefix")
       format("embedded-opentype"),
     url("../src/assets/fonts/Gilroy-Bold.woff2") format("woff2"),
     url("../src/assets/fonts/Gilroy-Bold.woff") format("woff"),
@@ -101,7 +108,8 @@
 @font-face {
   font-family: "Gilroy";
   src: url("../src/assets/fonts/Gilroy-Black.eot");
-  src: url("../src/assets/fonts/Gilroy-Black.eot?#iefix")
+  src:
+    url("../src/assets/fonts/Gilroy-Black.eot?#iefix")
       format("embedded-opentype"),
     url("../src/assets/fonts/Gilroy-Black.woff2") format("woff2"),
     url("../src/assets/fonts/Gilroy-Black.woff") format("woff"),

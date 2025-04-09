@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect, useRef } from "react";
 import "./Testimonial.scss";
 import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+// import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitType from "split-type";
 import Img1 from "../../assets/imgs/personImg1.png";
 import Starr from "../../assets/imgs/smoothStar.png";
@@ -9,7 +9,7 @@ import HalfStar from "../../assets/imgs/HalfStar.png";
 import MobileStand from "../../assets/imgs/MobileStand.png";
 import Bg1 from "../../assets/imgs/TestimoniolBg1.png";
 import Bg2 from "../../assets/imgs/TestimonialBg2.png";
-import CM1 from "../../assets/imgs/cardMirror1.png";
+// import CM1 from "../../assets/imgs/cardMirror1.png";
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 
 const Testimonial = ({ homeRef }) => {
@@ -76,12 +76,12 @@ const Testimonial = ({ homeRef }) => {
                   {index === 0
                     ? "Devon Lane"
                     : index === 1
-                    ? "Ronald Richards"
-                    : index === 2
-                    ? "Marvin McKinney"
-                    : index === 3
-                    ? "Darlene Robertson"
-                    : index >= 4 && "Brooklyn Simmons"}
+                      ? "Ronald Richards"
+                      : index === 2
+                        ? "Marvin McKinney"
+                        : index === 3
+                          ? "Darlene Robertson"
+                          : index >= 4 && "Brooklyn Simmons"}
                 </h2>
               </div>
               <div className="card-lower-div">
@@ -200,7 +200,7 @@ const Testimonial = ({ homeRef }) => {
 
 export default Testimonial;
 
-{
+// {
   /* <div className={rotate === 1 ? "info-card" : "info-card rotate"} style={{transform:rotate >=2 && `translateX(${-18*(rotate-1)}vw) perspective(1000px) rotate3d(0, 1, 0, -60deg) scale(0.8)`}}>
       <div className="card-upper-div">
        <img src={Img1} alt="" />
@@ -297,4 +297,4 @@ export default Testimonial;
         </div>
        </div>
       </div> */
-}
+// }

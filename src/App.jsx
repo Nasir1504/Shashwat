@@ -11,7 +11,6 @@ const App = () => {
   let mediaQuery = window.matchMedia(`(max-width: 680px)`);
   const [query, setQuery] = useState(mediaQuery.matches);
 
-
   useEffect(() => {
     const handleResize = () => {
       setQuery(mediaQuery.matches);
@@ -30,11 +29,19 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home query={query} />} />
-        <Route path="/course-details" element={<CourseDetails query={query} />} />
-        <Route path="/language-learning" element={<LanguageLearning query={query} />} />
+        <Route
+          path="/course-details"
+          element={<CourseDetails query={query} />}
+        />
+        <Route
+          path="/language-learning"
+          element={<LanguageLearning query={query} />}
+        />
         <Route path="/job-placement" element={<JobPlacement query={query} />} />
-        <Route path="/consultancy-solution" element={<ConsultancySolution query={query} />} />
-
+        <Route
+          path="/consultancy-solution"
+          element={<ConsultancySolution query={query} />}
+        />
       </Routes>
     </BrowserRouter>
   );
