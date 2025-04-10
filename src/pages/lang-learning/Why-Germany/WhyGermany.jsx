@@ -25,24 +25,24 @@ export default function WhyGermany({ progress, query }) {
             }}
           />
         </h3>
-        {!query ?
+        {!query ? (
           <p>
-            What makes Germany the ideal destination for world-class education and
-            limitless opportunities?
+            What makes Germany the ideal destination for world-class education
+            and limitless opportunities?
             <br />
             There are a plethora of reasons why it’s one of the favorite
             destinations of international students, some <br />
             of which are:
           </p>
-          :
+        ) : (
           <p>
-            What makes Germany the ideal destination for world-class education and
-            limitless opportunities?
+            What makes Germany the ideal destination for world-class education
+            and limitless opportunities?
             <br />
             There are a plethora of reasons why it’s one of the favorite
             destinations of international students, some of which are:
           </p>
-        }
+        )}
         <button>Explore Now</button>
       </section>
       <section className="bottom-section">

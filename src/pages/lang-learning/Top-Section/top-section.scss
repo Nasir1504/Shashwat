@@ -253,37 +253,36 @@
   .input-field-main {
     position: relative;
     width: 95%;
-    height: 10%;
-    // background-color: #fff000;
-    border-radius: 4vw;
+    height: 10vw;
+    background: transparent;
+    border-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     // border: 1px solid #000;
-    gap: 0.5em;
+    gap: 4%;
 
     .input-field {
-      width: 65%;
+      width: 60%;
       height: 100%;
       font-size: 3.2vw;
-      border-radius: 4vw;
-      padding-left: 2vw;
+      border-radius: 2vw;
+      padding-left: 0.5em;
     }
 
     button {
-      width: 35%;
+      position: relative;
       height: 100%;
       right: 0.5em;
       z-index: 1;
       padding: 0 1em;
       background-color: #ffb500;
-      border-radius: 500px;
+      border-radius: 2vw;
       font-size: 3.2vw;
       color: #000;
-      font-weight: 500;
-      box-shadow: 0.2em 0.2em 2px #0000007c;
-      border-radius: 4vw;
+      font-weight: 600;
+      box-shadow: 0.1em 0.1em 1px #0000007c;
     }
   }
 }

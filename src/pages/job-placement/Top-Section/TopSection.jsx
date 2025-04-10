@@ -33,16 +33,29 @@ export default function TopSection({ query }) {
           <br />
           <span className="hr-span" />
         </h3>
-        <p>
-          Germany offers great opportunities in healthcare, with high demand for
-          <br />
-          skilled nurses due to its aging population.
-          <br />
-          <br />
-          Shashwat Sprachschule is your one-stop shop for launching your
-          <br />
-          successful nursing career in Germany.
-        </p>
+
+        {!query ? (
+          <p>
+            Germany offers great opportunities in healthcare, with high demand
+            for
+            <br />
+            skilled nurses due to its aging population.
+            <br />
+            <br />
+            Shashwat Sprachschule is your one-stop shop for launching your
+            <br />
+            successful nursing career in Germany.
+          </p>
+        ) : (
+          <p>
+            Germany offers great opportunities in healthcare, with high demand
+            for skilled nurses due to its aging population.
+            <br />
+            <br />
+            Shashwat Sprachschule is your one-stop shop for launching your
+            successful nursing career in Germany.
+          </p>
+        )}
         {!query && (
           <div className="input-field-main">
             <input

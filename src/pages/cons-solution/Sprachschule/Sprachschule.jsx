@@ -57,19 +57,19 @@ export default function Sprachschule({ progress, query }) {
           providing.
         </p>
 
-        {!query ?
+        {!query ? (
           <div className="circle-frame-main">
             <img src={CircleFrame} alt="" className="circle-frame" />
             <img src={Circle1} alt="" className="circle-vector" />
             <img src={PersonImg} alt="" className="person-img" />
           </div>
-          :
+        ) : (
           <div className="circle-frame-main-mobile">
             <img src={CircleFrame} alt="" className="circle-frame" />
             <img src={Circle1} alt="" className="circle-vector" />
             <img src={PersonImg} alt="" className="person-img" />
           </div>
-        }
+        )}
       </section>
 
       {!query ? (
@@ -104,11 +104,11 @@ export default function Sprachschule({ progress, query }) {
         >
           <div
             className="inner"
-          // style={{
-          //     transform:
-          //         progress.Progress > 0.1 ? `translateY(-${Math.min(150, (Math.max(0, progress.Progress * 180)))}%)` : "",
-          //     // "translateY(-160%)",
-          // }}
+            // style={{
+            //     transform:
+            //         progress.Progress > 0.1 ? `translateY(-${Math.min(150, (Math.max(0, progress.Progress * 180)))}%)` : "",
+            //     // "translateY(-160%)",
+            // }}
           >
             {CARD_DATA.map((item, i) => {
               return (

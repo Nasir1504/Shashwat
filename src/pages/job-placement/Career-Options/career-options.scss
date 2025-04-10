@@ -183,7 +183,7 @@
           position: absolute;
           width: 80%;
           object-fit: contain;
-          top: 6vw;
+          top: 12vw;
           animation: circleRotationKF 50s ease-in-out infinite;
         }
 
@@ -191,14 +191,14 @@
           position: absolute;
           width: 67%;
           object-fit: contain;
-          top: 13vw;
+          top: 18.5vw;
         }
 
         .person-img {
           position: absolute;
           width: 45%;
           object-fit: contain;
-          top: 1vw;
+          top: 7vw;
         }
       }
     }
@@ -216,10 +216,10 @@
 
       .ellipse {
         position: absolute;
-        bottom: -4vw;
+        bottom: -2vw;
         // left: 0vw;
         width: 105vw;
-        height: 8vw;
+        height: 4vw;
         z-index: 1;
         background-color: #fff;
         background: linear-gradient(

@@ -49,15 +49,28 @@ export default function Sprachschule({ progress, query }) {
     >
       <section className="top-section">
         <p className="sub-heading1">German Language Training to Placements</p>
-        <h3>
-          Shashwat Sprachschule is here to <br /> Take Care of Everything for
-          You
-        </h3>
-        <p className="sub-heading2">
-          At Shashwat Sprachschule, we offer end-to-end support to help you
-          succeed <br /> in your nursing career in Germany. Our process
-          includes:
-        </p>
+        {!query ? (
+          <h3>
+            Shashwat Sprachschule is here to <br /> Take Care of Everything for
+            You
+          </h3>
+        ) : (
+          <h3>
+            Shashwat Sprachschule is here to Take Care of Everything for You
+          </h3>
+        )}
+        {!query ? (
+          <p className="sub-heading2">
+            At Shashwat Sprachschule, we offer end-to-end support to help you
+            succeed <br /> in your nursing career in Germany. Our process
+            includes:
+          </p>
+        ) : (
+          <p className="sub-heading2">
+            At Shashwat Sprachschule, we offer end-to-end support to help you
+            succeed in your nursing career in Germany. Our process includes:
+          </p>
+        )}
 
         <div className="circle-frame-main">
           <img src={CircleFrame} alt="" className="circle-frame" />
@@ -112,18 +125,16 @@ export default function Sprachschule({ progress, query }) {
         <section
           className="sprachschule-main-bottom-section"
           style={{
-            transform: progress.Progress < 0.01 && "translateX(100vw)",
+            transform: "translateX(0vw)",
             // progress.Progress > 0.1 ? `translateY(-${Math.min(35, (Math.max(0, progress.Progress * 100)))}%)` : "",
             // "translateY(-35%)",
-
-            transition: progress.Progress >= 0.5 && "all 0.2s ease-out",
           }}
         >
           <div
             className="inner"
             style={{
               transform:
-                progress.Progress > 0.1
+                progress.Progress > 0.05
                   ? `translateY(-${Math.min(135, Math.max(0, progress.Progress * 180))}%)`
                   : "",
               // "translateY(-125%)",

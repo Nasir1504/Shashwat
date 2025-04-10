@@ -201,7 +201,7 @@ const Testimonial = ({ homeRef }) => {
 export default Testimonial;
 
 // {
-  /* <div className={rotate === 1 ? "info-card" : "info-card rotate"} style={{transform:rotate >=2 && `translateX(${-18*(rotate-1)}vw) perspective(1000px) rotate3d(0, 1, 0, -60deg) scale(0.8)`}}>
+/* <div className={rotate === 1 ? "info-card" : "info-card rotate"} style={{transform:rotate >=2 && `translateX(${-18*(rotate-1)}vw) perspective(1000px) rotate3d(0, 1, 0, -60deg) scale(0.8)`}}>
       <div className="card-upper-div">
        <img src={Img1} alt="" />
        <h2>Devon Lane</h2>

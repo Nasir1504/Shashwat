@@ -53,7 +53,7 @@ export default function CareerOptions({ progress, query }) {
               style={{
                 transform:
                   progress.Progress > 0.2 &&
-                  `translateY(-${Math.min(120, Math.max(0, progress.Progress * 180))}%)`,
+                  `translateY(-${Math.min(102, Math.max(0, progress.Progress * 180))}%)`,
                 // transform: 'translatey(-125%)'
               }}
             >
