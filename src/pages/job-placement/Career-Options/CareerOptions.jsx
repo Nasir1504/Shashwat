@@ -8,6 +8,7 @@ import { CAREER_OPTIONS_DATA } from "./careerOptionsData";
 
 //imgs
 import Heading from "../../../assets/imgs/job-placement/career-option-heading.png";
+import Rect from "../../../assets/imgs/job-placement/rect-bar.png";
 
 import Circle1 from "../../../assets/imgs/language-learning/circle1.png";
 import CircleFrame from "../../../assets/imgs/language-learning/circle-frame.png";
@@ -33,6 +34,9 @@ export default function CareerOptions({ progress, query }) {
         </div>
 
         <div className="card-slider">
+          <div className="rect-bar">
+            <img src={Rect} alt="" />
+          </div>
           {!query ? (
             <div
               className="slides"
@@ -53,7 +57,7 @@ export default function CareerOptions({ progress, query }) {
               style={{
                 transform:
                   progress.Progress > 0.2 &&
-                  `translateY(-${Math.min(102, Math.max(0, progress.Progress * 180))}%)`,
+                  `translateY(-${Math.min(72, Math.max(0, progress.Progress * 180))}%)`,
                 // transform: 'translatey(-125%)'
               }}
             >
