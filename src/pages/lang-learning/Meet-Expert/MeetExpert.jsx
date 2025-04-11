@@ -62,31 +62,31 @@ export default function MeetExpert() {
             style={{
               transform: isVisible && "scale(1)",
             }}
-          ></div>
+          >Expert Instructors</div>
           <div
             className="detail2 ract"
             style={{
               transform: isVisible && "scale(1)",
             }}
-          ></div>
+          >Interactive Learning</div>
           <div
             className="detail3 ract"
             style={{
               transform: isVisible && "scale(1)",
             }}
-          ></div>
+          >Personalized Attention</div>
           <div
             className="detail4 ract"
             style={{
               transform: isVisible && "scale(1)",
             }}
-          ></div>
+          >Career Consultancy</div>
           <div
             className="detail5 ract"
             style={{
               transform: isVisible && "scale(1)",
             }}
-          ></div>
+          >Cultural Immersion</div>
 
           <div className="frame-ract1"></div>
           <div className="frame-ract2">
