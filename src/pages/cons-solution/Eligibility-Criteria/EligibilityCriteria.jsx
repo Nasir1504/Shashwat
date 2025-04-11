@@ -70,7 +70,7 @@ export default function EligibilityCriteria({ progress, query }) {
       <section
         className="bottom-section"
         style={{
-          transform: `translateY(-${Math.min(140, Math.max(0, sValue2 * 650))}%)`,
+          transform: `translateY(-${Math.min(140, Math.max(0, sValue2 * 550))}%)`,
         }}
       >
         <NursingInGermany progress={progress} query={query} />
