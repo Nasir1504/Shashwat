@@ -21,7 +21,8 @@ import { FooterMob } from "../../components/Footer/FooterMob";
 import "./language-learning.scss";
 
 export default function LanguageLearning({ query }) {
-  const langLearnRef = useRef();
+  const heroRef = useRef();
+
   const [progress1, setProgress1] = useState({
     Progress: "",
     Page: "",
@@ -38,21 +39,22 @@ export default function LanguageLearning({ query }) {
 
   const { pathname } = useLocation();
 
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
   return (
-    <div className="language-learning-main ">
+    <div className="language-learning-main">
       {/* <p style={{ color: '#000', position: 'fixed', zIndex: '10', top: '10%' }}>
         {progress.Progress}{' '}{progress.Page}
         <br />
         {progress.Progress + (progress.Page - 1.2)}
 
       </p> */}
-      <NavBar LangLearnRef={langLearnRef} />
+      <NavBar LangLearnRef={heroRef} />
 
-      <TopSection query={query} />
+      <TopSection query={query} heroRef={heroRef} />
 
       <Stickyroll
         pages={1}

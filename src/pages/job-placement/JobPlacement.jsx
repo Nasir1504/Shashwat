@@ -25,7 +25,7 @@ import GermanyWillNeed from "../../assets/imgs/job-placement/germany-will-need.p
 import GermanyWillNeed2 from "../../assets/imgs/job-placement/germany-will-need2.png";
 
 export default function JobPlacement({ query }) {
-  const jobPlacementRef = useRef();
+  const heroRef = useRef();
 
   const [progress1, setProgress1] = useState({
     Progress: "",
@@ -49,77 +49,78 @@ export default function JobPlacement({ query }) {
     // alert()
   }, [pathname]);
 
+
   return (
-    <div className="job-placement-main">
-      {/* <p style={{ color: '#000', position: 'fixed', zIndex: '10', top: '10%' }}>
+      <div className="job-placement-main">
+        {/* <p style={{ color: '#000', position: 'fixed', zIndex: '10', top: '10%' }}>
         {progress.Progress}{' '}{progress.Page}
         <br />
       </p> */}
-      <NavBar JobPlacementRef={jobPlacementRef} />
+        <NavBar JobPlacementRef={heroRef}/>
 
-      <TopSection query={query} />
-      <WhyChoose />
-      <Stickyroll
-        pages={1}
-        factor={2}
-        onProgress={(progress, page, index) => {
-          setProgress1({
-            Page: page,
-            Progress: progress,
-          });
-        }}
-      >
-        <div className="scroll-comp-one">
-          <CareerOptions progress={progress1} query={query} />
+        <TopSection query={query} heroRef={heroRef}/>
+        <WhyChoose />
+        <Stickyroll
+          pages={1}
+          factor={2}
+          onProgress={(progress, page, index) => {
+            setProgress1({
+              Page: page,
+              Progress: progress,
+            });
+          }}
+        >
+          <div className="scroll-comp-one">
+            <CareerOptions progress={progress1} query={query} />
+          </div>
+        </Stickyroll>
+        <div
+          style={{
+            height: "10vw",
+          }}
+        ></div>
+        <div className="germany-will-need-comp">
+          {!query ? (
+            <img src={GermanyWillNeed} className="germany-will-need-img" alt="" />
+          ) : (
+            <img
+              src={GermanyWillNeed2}
+              className="germany-will-need-img2"
+              alt=""
+            />
+          )}
         </div>
-      </Stickyroll>
-      <div
-        style={{
-          height: "10vw",
-        }}
-      ></div>
-      <div className="germany-will-need-comp">
-        {!query ? (
-          <img src={GermanyWillNeed} className="germany-will-need-img" alt="" />
-        ) : (
-          <img
-            src={GermanyWillNeed2}
-            className="germany-will-need-img2"
-            alt=""
-          />
-        )}
+
+        <Stickyroll
+          pages={1}
+          factor={4}
+          onProgress={(progress, page, index) => {
+            setProgress2({
+              Page: page,
+              Progress: progress,
+            });
+          }}
+        >
+          <NursingInGermany Prog={progress2.Progress} query={query} />
+        </Stickyroll>
+
+        <Stickyroll
+          pages={1}
+          factor={4}
+          onProgress={(progress, page, index) => {
+            setProgress3({
+              Page: page,
+              Progress: progress,
+            });
+          }}
+        >
+          <div className="scroll-comp-one">
+            <Sprachschule progress={progress3} query={query} />
+          </div>
+        </Stickyroll>
+        {!query ? <Testimonial /> : <TestiMob />}
+        <Contact />
+        {!query ? <Footer /> : <FooterMob />}
       </div>
-
-      <Stickyroll
-        pages={1}
-        factor={4}
-        onProgress={(progress, page, index) => {
-          setProgress2({
-            Page: page,
-            Progress: progress,
-          });
-        }}
-      >
-        <NursingInGermany Prog={progress2.Progress} query={query} />
-      </Stickyroll>
-
-      <Stickyroll
-        pages={1}
-        factor={4}
-        onProgress={(progress, page, index) => {
-          setProgress3({
-            Page: page,
-            Progress: progress,
-          });
-        }}
-      >
-        <div className="scroll-comp-one">
-          <Sprachschule progress={progress3} query={query} />
-        </div>
-      </Stickyroll>
-      {!query ? <Testimonial /> : <TestiMob />}
-      <Contact />
-      {!query ? <Footer /> : <FooterMob />}
-    </div>
   );
 }

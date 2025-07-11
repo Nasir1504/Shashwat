@@ -106,6 +106,15 @@
       // padding: 1%;
       display: flex;
 
+      .logo-img{
+        position: absolute;
+        top: 5%;
+        left: 8%;
+        width: 28%;
+        object-fit: contain;
+        z-index: 1;
+      }
+
       .main-frame {
         position: absolute;
         width: 100%;
@@ -119,16 +128,16 @@
         position: relative;
         z-index: 1;
         width: 55%;
-        height: 7vw;
+        height: 6vw;
         // background-color: #fff;
         left: 4.2%;
-        top: 16%;
+        top: 20%;
         // border: 1px solid #000;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-start;
-        padding-left: 2%;
+        margin-left: 6%;
 
         .heading {
           color: #fff;
@@ -138,6 +147,9 @@
         }
 
         h3 {
+          position: absolute;
+          top: 25%;
+          left: 80%;
           font-size: 4.5vw;
           font-weight: 900;
           line-height: 0.9;
@@ -167,7 +179,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding: 0 5% 0 12%;
+        padding: 0 10% 0 15%;
 
         ul {
           list-style-type: disc;
@@ -289,7 +301,7 @@
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: cenfter;
         align-items: flex-start;
         flex-wrap: wrap;
         gap: 5%;
@@ -306,6 +318,15 @@
           // padding: 1%;
           display: flex;
 
+          .logo-img{
+            position: absolute;
+            top: 5%;
+            left: 8%;
+            width: 28%;
+            object-fit: contain;
+            z-index: 1;
+          }
+
           .main-frame {
             position: absolute;
             width: 100%;
@@ -319,14 +340,14 @@
             position: relative;
             z-index: 1;
             width: 55%;
-            height: 7vw;
+            height: 15vw;
             // background-color: #fff;
-            left: 4.2%;
+            left: 2%;
             top: 20%;
             // border: 1px solid #000;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: flex-start;
             gap: 0.4em;
             padding-left: 2%;
@@ -339,7 +360,8 @@
             }
 
             h3 {
-              font-size: 6.5vw;
+              position: absolute;
+              font-size: 12vw;
               font-weight: 900;
               line-height: 0.9;
               fill-color: #0000002b;
@@ -361,6 +383,7 @@
 
           .bottom-part {
             position: absolute;
+            left: 5%;
             bottom: 5%;
             width: 100%;
             height: 47%;
@@ -368,7 +391,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            padding: 0 5% 0 12%;
+            padding: 0 12% 0 8.5%;
 
             ul {
               list-style-type: disc;

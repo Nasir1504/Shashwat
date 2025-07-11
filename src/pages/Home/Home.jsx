@@ -77,15 +77,15 @@ function App({ query }) {
               className="w-full h-full object-cover rounded-[2rem]"
             />
           </div>
-          <div className="w-full md:w-1/2 h-fit md:h-full flex flex-col justify-center items-center md:items-start gap-4 md:gap-8 z-[1]">
+          <div className="w-full md:w-1/2 h-fit md:h-full flex flex-col justify-center items-center md:items-start gap-4 md:gap-8 z-[1] heading-main">
             {query ? (
-              <h1 className="text-3xl font-semibold text-white leading-tight text-center">
+              <h1 className="text-3xl font-semibold text-white leading-tight text-center heading">
                 A <span className="text-[#FFC537]">Unique</span> approach to{" "}
-                <br />
-                learning German Language <br /> Online
+                
+                learning German Language Online
               </h1>
             ) : (
-              <h1 className="text-6xl font-semibold text-white leading-tight text-left">
+              <h1 className="text-6xl font-semibold text-white leading-tight text-left heading">
                 A <span className="text-[#FFC537]">Unique</span> approach to{" "}
                 <br />
                 learning German
@@ -96,13 +96,13 @@ function App({ query }) {
               Learn at Your Own pace with lifetime access <br /> on mobile and
               desktop
             </p>
-            <div className="hidden md:block contact-bar relative text-sm md:text-lg mt-8 md:mt-0">
+            <div className="hidden md:block contact-bar relative text-sm md:text-lg mt-8 md:mt-0 search-box">
               <input
                 type="text"
                 placeholder="Enter Your Email/Contact Number"
-                className="px-4 md:px-7 py-4 md:py-6 w-[300px] md:w-[450px] rounded-full text-black"
+                className="px-4 md:px-7 py-4 md:py-6 w-[300px] md:w-[450px] rounded-full text-black input-element"
               />
-              <div className="absolute right-4 top-1/2 -translate-y-1/2 px-3 py-2 bg-[#FFC537] text-black font-semibold w-fit h-fit rounded-full cursor-pointer">
+              <div className="btn absolute right-2 top-1/2 -translate-y-1/2 bg-[#FFC537] text-black font-semibold cursor-pointer">
                 Get Started
               </div>
             </div>
@@ -166,7 +166,7 @@ function App({ query }) {
               </div>
             </div>
           </div>
-          <div className="hero-graphic w-full md:w-1/2 h-fit md:h-full pr-14 flex flex-col justify-center items-center z-[1] overflow-hidden">
+          <div className="hero-graphic flex flex-col justify-center items-center z-[1] overflow-hidden img-container">
             <img
               src={heroAvatar}
               alt="hero-avatar ds"
@@ -187,7 +187,7 @@ function App({ query }) {
                   Get Started
                 </button>
               </div>
-              <div className="flex w-full ml-6 justify-center items-center gap-2">
+              <div className="flex w-full justify-center items-center gap-2">
                 <div className="tag-one flex items-center gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -259,7 +259,7 @@ function App({ query }) {
             display: query && "none",
           }}
         ></section>
-        {!query ? <Scards homeRef={homeRef} /> : <ScardsMob />}
+        {!query ? <Scards homeRef={homeRef} /> : <ScardsMob homeRef={homeRef}/>}
         <section
           className="w-full h-[300vh] "
           style={{

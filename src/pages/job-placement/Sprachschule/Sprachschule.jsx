@@ -11,6 +11,8 @@ import Circle1 from "../../../assets/imgs/language-learning/circle1.png";
 import CircleFrame from "../../../assets/imgs/language-learning/circle-frame.png";
 import PersonImg from "../../../assets/imgs/language-learning/person-img.png";
 import FrameCard from "../../../assets/imgs/language-learning/card-frame.png";
+import logo from "../../../assets/logo.png";
+
 
 export default function Sprachschule({ progress, query }) {
   // const [isVisible, setIsVisible] = useState(false);
@@ -45,7 +47,7 @@ export default function Sprachschule({ progress, query }) {
   return (
     <div
       className={!query ? "sprachschule-main" : "sprachschule-main-mobile"}
-      //  ref={SprachschuleSupportRef}
+    //  ref={SprachschuleSupportRef}
     >
       <section className="top-section">
         <p className="sub-heading1">German Language Training to Placements</p>
@@ -99,12 +101,15 @@ export default function Sprachschule({ progress, query }) {
         >
           {CARD_DATA.map((item, i) => {
             const itemList = item.detailList;
+            const formattedNumber = (i + 1).toString().padStart(2, "0");
 
             return (
               <div className="frame-card-main" key={i}>
+                <img src={logo} alt="" className="logo-img" />
                 <img src={FrameCard} alt="" className="main-frame" />
                 <div className="top-part">
                   <p className="heading">{item.heading}</p>
+                  <h3>{formattedNumber}</h3>
                   <p className="sub-heading">By {item.name}</p>
                 </div>
 
@@ -142,12 +147,15 @@ export default function Sprachschule({ progress, query }) {
           >
             {CARD_DATA.map((item, i) => {
               const itemList = item.detailList;
+              const formattedNumber = (i + 1).toString().padStart(2, "0");
 
               return (
                 <div className="frame-card-main" key={i}>
+                  <img src={logo} alt="" className="logo-img" />
                   <img src={FrameCard} alt="" className="main-frame" />
                   <div className="top-part">
                     <p className="heading">{item.heading}</p>
+                    <h3>{formattedNumber}</h3>
                     <p className="sub-heading">By {item.name}</p>
                   </div>
 

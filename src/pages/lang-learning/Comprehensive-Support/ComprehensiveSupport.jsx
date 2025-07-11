@@ -11,6 +11,8 @@ import Circle1 from "../../../assets/imgs/language-learning/circle1.png";
 import CircleFrame from "../../../assets/imgs/language-learning/circle-frame.png";
 import PersonImg from "../../../assets/imgs/language-learning/person-img.png";
 import FrameCard from "../../../assets/imgs/language-learning/card-frame.png";
+import logo from "../../../assets/logo.png";
+
 
 export default function ComprehensiveSupport({ progress, query }) {
   // const [isVisible, setIsVisible] = useState(false);
@@ -46,7 +48,7 @@ export default function ComprehensiveSupport({ progress, query }) {
   return (
     <div
       className="comprehensive-support-main"
-      //  ref={ComprehensiveSupportRef}
+    //  ref={ComprehensiveSupportRef}
     >
       <section className="top-section">
         <p className="sub-heading1">Germany Awaits{query}</p>
@@ -95,7 +97,7 @@ export default function ComprehensiveSupport({ progress, query }) {
               progress.Progress < 0.01
                 ? `translate(100%)`
                 : progress.Progress >= 0.2 &&
-                  `translate(-${Math.min(35, Math.max(0, progress.Progress * 80))}%)`,
+                `translate(-${Math.min(35, Math.max(0, progress.Progress * 80))}%)`,
 
             transition:
               progress.Progress < 0.2 && "all 2s cubic-bezier(.05,1.15,1,.99)",
@@ -106,6 +108,7 @@ export default function ComprehensiveSupport({ progress, query }) {
 
             return (
               <div className="frame-card-main" key={i}>
+                <img src={logo} alt="" className="logo-img" />
                 <img src={FrameCard} alt="" className="main-frame" />
                 <div className="top-part">
                   <p className="heading">{item.heading}</p>
@@ -145,6 +148,7 @@ export default function ComprehensiveSupport({ progress, query }) {
 
               return (
                 <div className="frame-card-main" key={i}>
+                  <img src={logo} alt="" className="logo-img" />
                   <img src={FrameCard} alt="" className="main-frame" />
                   <div className="top-part">
                     <p className="heading">{item.heading}</p>

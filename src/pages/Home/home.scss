@@ -13,6 +13,43 @@
   color: white;
   overflow: hidden;
 
+  #home {
+
+    .heading-main {
+      .heading {
+        font-size: 3.8vw;
+        color: #fff;
+        line-height: 1.1;
+        font-weight: 500;
+
+      }
+
+      p {
+        font-size: 1.4vw;
+        line-height: 1.2;
+
+      }
+    }
+
+    .search-box {
+      .input-element {
+        width: 38vw;
+        height: 5vw;
+      }
+
+      .btn {
+        z-index: 1;
+        padding: 0.8vw 1.4vw;
+        background-color: #ffb500;
+        font-size: 1.2vw;
+        color: #000;
+        font-weight: 600;
+        box-shadow: 0.1em 0.1em 1px #0000007c;
+        border-radius: 500px;
+      }
+    }
+  }
+
   @include sm {
     padding: 0px 0px;
   }
@@ -30,5 +67,54 @@
     height: 100vh;
     /* border:1px solid red; */
     overflow: hidden;
+  }
+
+}
+
+// --------------------------@media (680px)-----------------------------------
+
+@media (width < 680px) {
+  .App {
+    #home {
+      .img-container {
+        width: 80%;
+      }
+
+      .heading-main {
+        .heading {
+          padding: 0 4%;
+          font-size: 5.4vw;
+          color: #fff;
+          line-height: 1.1;
+          font-weight: 500;
+
+        }
+
+        p {
+          font-size: 3.2vw;
+          line-height: 1.2;
+
+        }
+      }
+
+      .search-box {
+        .input-element {
+          width: 38vw;
+          height: 5vw;
+        }
+
+        .btn {
+          z-index: 1;
+          padding: 0.8vw 1.4vw;
+          background-color: #ffb500;
+          font-size: 1.2vw;
+          color: #000;
+          font-weight: 600;
+          box-shadow: 0.1em 0.1em 1px #0000007c;
+          border-radius: 500px;
+        }
+      }
+
+    }
   }
 }

@@ -10,16 +10,15 @@ import BluredCircle1 from "../../../assets/imgs/language-learning/blured-circle1
 
 import textVector from "../../../assets/imgs/language-learning/text-vector.png";
 
-export default function TopSection({ query }) {
-  return <>{query ? <TopSectionMobile /> : <TopSectionPC />}</>;
+export default function TopSection({ query, heroRef }) {
+  return <>{query ? <TopSectionMobile /> : <TopSectionPC heroRef={heroRef} />}</>;
 }
 
-const TopSectionPC = () => {
+const TopSectionPC = ({ heroRef }) => {
   return (
     <div className="top-section-main-pc">
-      <section className="left-section">
+      <section className="left-section" ref={heroRef}>
         <img src={BluredCircle1} alt="" className="blured-circle3" />
-
         <p>
           <span
             className="img-span"

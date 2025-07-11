@@ -8,8 +8,8 @@ import Star from "../../assets/imgs/smoothStar.png";
 const GermanLang = () => {
   return (
     <div className="german-main">
-      <nav className="navbar absolute top-2 left-1/2 -translate-x-1/2 w-[93%] h-[90px] px-8 py-4 flex justify-between items-center rounded-3xl z-50">
-        <div className="logo-container w-26 h-26">
+      <nav className="navbar absolute top-2 left-1/2 -translate-x-1/2 w-[98%] h-[90px] px-4 py-4 flex justify-between items-center rounded-3xl z-50">
+        <div className="logo-container">
           <img src={logo} alt="logo" className="w-full h-full object-contain" />
         </div>
         <div className="links-container flex justify-center items-center gap-8 text-[#D3D3D3]">
@@ -29,7 +29,7 @@ const GermanLang = () => {
             Testimonials
           </a>
         </div>
-        <button className="contact-button w-fit h-fit px-4 py-3 bg-[#FFC537] text-black shadow-black shadow-md rounded-full text-lg font-semibold">
+        <button className="contact-button bg-[#FFC537] text-black shadow-black shadow-md rounded-full text-lg font-semibold">
           Contact Us
         </button>
       </nav>

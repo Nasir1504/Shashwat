@@ -1,7 +1,6 @@
 import React from "react";
 import "./FooterMob.scss";
 
-// import imgLogo from "../img/Logo.png";
 import imgLogo from "../img/Logo2.png";
 import fb from "../img/FB.png";
 import tw from "../img/Twitter.png";
@@ -99,7 +98,7 @@ export const FooterMob = () => {
           </div>
         </div>
         {/* --------------------------------------------------------------------------------------- */}
-        <div className="f-content-mob" style={{ height: "15%" }}>
+        <div className="f-content-mob" style={{ height: "25%" }}>
           <div className="f-div-2-txt-mob">
             <p style={{ marginRight: "15%" }}>Contact</p>
           </div>

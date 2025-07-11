@@ -2,30 +2,47 @@ export const CARD_DATA = [
   {
     heading: "German Language Training",
     name: "Mr. Keyur Soni",
-    details: "Tailored courses to achieve B1-B2 level proficiency.",
+    details: "From A1 to B1/B2 level.",
   },
 
   {
-    heading: "Career Guidance",
+    heading: "Exam Preparation",
     name: "Mr. Keyur Soni",
-    details: "Expert counseling to choose the best Ausbildung program for you.",
+    details: "Ensure success with personalized study plans.",
   },
 
   {
-    heading: "Application Support",
+    heading: "Profile Evaluation",
     name: "Mr. Keyur Soni",
     details:
-      "Assistance in creating German-standard resumes and motivational letters.",
+      "Align your strengths with the right Ausbildung program.",
   },
 
   {
-    heading: "Placement Assistance",
+    heading: "Document Verification",
     name: "Mr. Keyur Soni",
-    details: "Connecting you with trusted Ausbildung employers.",
+    details: "Ensure accuracy and completeness for your applications.",
   },
   {
-    heading: "Visa Process Support",
+    heading: "Vocational Training Application",
     name: "Mr. Keyur Soni",
-    details: "Guidance to smoothly navigate visa applications.",
+    details: "Assistance in applying to trusted Ausbildung programs.",
+  },
+
+
+  {
+    heading: "Admission/Offer Letter Support",
+    name: "Mr. Keyur Soni",
+    details: "Help secure your place at vocational schools and companies.",
+  },
+  {
+    heading: "Accommodation Assistance",
+    name: "Mr. Keyur Soni",
+    details: "Guidance on finding	 suitable housing in Germany.",
+  },
+  {
+    heading: "Visa Assistance",
+    name: "Mr. Keyur Soni",
+    details: "Step-by-step support for smooth visa processing.",
   },
 ];

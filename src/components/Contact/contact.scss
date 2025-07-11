@@ -38,6 +38,7 @@
       justify-content: center;
       gap: 0.5vw;
       margin-bottom: 10px;
+      
       h1 {
         font-size: 60px;
         font-weight: 600;
@@ -54,23 +55,23 @@
     .cLine {
       color: #2d3080;
       position: relative;
-      // display: flex;
-      // align-items: center;
+      display: flex;
+      align-items: center;
       overflow: hidden;
       // justify-content: center;
       &::before {
-        content: "Hello";
-        animation: wordsAnim 5s infinite;
+        content: "Guten Tag";
+        animation: wordsAnim 8s infinite;
       }
       &::after {
         content: "";
         width: 100%;
         left: 0;
         position: absolute;
-        height: 95%;
+        height: 100%;
         border-left: 3px solid orangered;
         background-color: rgb(255, 255, 255);
-        animation: cursorAnim 2.5s steps(6) infinite;
+        animation: cursorAnim 5s steps(9) infinite;
       }
     }
     .contactSubheading {
@@ -242,17 +243,17 @@
 @keyframes cursorAnim {
   100% {
     left: 100%;
-    margin-left: 30px;
+    margin-left: 34px;
   }
 }
 
 @keyframes wordsAnim {
   0%,
   50% {
-    content: "Hello";
+    content: "Guten Tag";
   }
   51%,
   100% {
-    content: "Hallo";
+    content: "Guten Tag";
   }
 }

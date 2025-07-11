@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 
 //styles
 import "./sprachschule.scss";
@@ -12,36 +12,38 @@ import CircleFrame from "../../../assets/imgs/language-learning/circle-frame.png
 import PersonImg from "../../../assets/imgs/language-learning/person-img.png";
 import FrameCard from "../../../assets/imgs/language-learning/card-frame.png";
 import HRImg from "../../../assets/imgs/consultancy-solution/hr-line.png";
+import logo from "../../../assets/logo.png";
+
 
 export default function Sprachschule({ progress, query }) {
-  const [isVisible, setIsVisible] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false);
   const SprachschuleSupportRef = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Only set isVisible if it hasn't been triggered before
-        if (SprachschuleSupportRef.current && entry.isIntersecting) {
-          setIsVisible(true);
-          SprachschuleSupportRef.current = true; // Mark as triggered
-        }
-      },
-      {
-        threshold: 0.8, // Trigger when 50% of the target is visible
-      },
-    );
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       // Only set isVisible if it hasn't been triggered before
+  //       if (SprachschuleSupportRef.current && entry.isIntersecting) {
+  //         setIsVisible(true);
+  //         SprachschuleSupportRef.current = true; // Mark as triggered
+  //       }
+  //     },
+  //     {
+  //       threshold: 0.8, // Trigger when 50% of the target is visible
+  //     },
+  //   );
 
-    const target = SprachschuleSupportRef.current;
-    if (target) {
-      observer.observe(target);
-    }
+  //   const target = SprachschuleSupportRef.current;
+  //   if (target) {
+  //     observer.observe(target);
+  //   }
 
-    return () => {
-      if (target) {
-        observer.unobserve(target);
-      }
-    };
-  }, []);
+  //   return () => {
+  //     if (target) {
+  //       observer.unobserve(target);
+  //     }
+  //   };
+  // }, []);
 
   return (
     <div
@@ -75,16 +77,34 @@ export default function Sprachschule({ progress, query }) {
       {!query ? (
         <section
           className="middle-section"
+          // style={{
+          //   transform: !isVisible && "translateX(100vw)",
+          // }}
           style={{
-            transform: !isVisible && "translateX(100vw)",
+            transform:
+              progress.Progress < 0.01
+                ? "translateX(100vw)"
+                : progress.Progress > 0.2
+                  ? `translate(-${Math.min(45, Math.max(0, progress.Progress * 100))}%)`
+                  : "",
+            // "translate(-35%)"
+
+            transition:
+              progress.Progress < 0.5
+                ? "all 2s cubic-bezier(.05,1.15,1,.99)"
+                : progress.Progress >= 0.5 && "all 0.2s ease-out",
           }}
         >
           {CARD_DATA.map((item, i) => {
+            const formattedNumber = (i + 1).toString().padStart(2, "0");
+
             return (
               <div className="frame-card-main" key={i}>
+                <img src={logo} alt="" className="logo-img" />
                 <img src={FrameCard} alt="" className="main-frame" />
                 <div className="top-part">
                   <p className="heading">{item.heading}</p>
+                  <h3>{formattedNumber}</h3>
                   <p className="sub-heading">By {item.name}</p>
                 </div>
 
@@ -99,23 +119,29 @@ export default function Sprachschule({ progress, query }) {
         <section
           className="middle-section"
           style={{
-            transform: !isVisible && "translateX(100vw)",
+            transform: "translateX(0vw)",
           }}
         >
           <div
             className="inner"
-            // style={{
-            //     transform:
-            //         progress.Progress > 0.1 ? `translateY(-${Math.min(150, (Math.max(0, progress.Progress * 180)))}%)` : "",
-            //     // "translateY(-160%)",
-            // }}
+            style={{
+              transform:
+                progress.Progress > 0.05
+                  ? `translateY(-${Math.min(55, Math.max(0, progress.Progress * 180))}%)`
+                  : "",
+              // "translateY(-125%)",
+            }}
           >
             {CARD_DATA.map((item, i) => {
+              const formattedNumber = (i + 1).toString().padStart(2, "0");
+
               return (
                 <div className="frame-card-main" key={i}>
+                  <img src={logo} alt="" className="logo-img" />
                   <img src={FrameCard} alt="" className="main-frame" />
                   <div className="top-part">
                     <p className="heading">{item.heading}</p>
+                    <h3>{formattedNumber}</h3>
                     <p className="sub-heading">By {item.name}</p>
                   </div>
 

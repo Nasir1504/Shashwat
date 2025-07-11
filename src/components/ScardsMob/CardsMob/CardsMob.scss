@@ -9,6 +9,18 @@
   margin-right: 0.67vw;
   margin-top: 1vw;
 
+  .card-no {
+    position: absolute;
+    font-size: 15vw;
+    font-weight: 800;
+    top: 8%;
+    right: 20%;
+    color: #000;
+    opacity: 0.1;
+    -webkit-text-stroke: 1px #fff;
+
+  }
+
   .card-div-img-mb {
     width: 95%;
     // height: 100%;
@@ -39,9 +51,9 @@
 
   .shash-logo-mb {
     position: absolute;
-    width: 20%;
+    width: 30%;
     object-fit: contain;
-    top: 4.5vw;
+    top: 3vw;
     left: 5.5vw;
   }
 

@@ -22,7 +22,8 @@ import { Footer } from "../../components/Footer/Footer";
 import { FooterMob } from "../../components/Footer/FooterMob";
 
 export default function ConsultancySolution({ query }) {
-  const consultancySolRef = useRef();
+  const heroRef = useRef();
+
   const [progress1, setProgress1] = useState({
     Progress: "",
     Page: "",
@@ -44,8 +45,10 @@ export default function ConsultancySolution({ query }) {
     // alert()
   }, [pathname]);
 
+
+
   return (
-    <div className="consultancy-solutions-main">
+    <div className="consultancy-solutions-main" >
       {/* <p style={{ color: '#000', position: 'fixed', zIndex: '10', top: '10%', left:'10%' }}>
         {progress.Progress}{' '}{progress.Page}
         <br />
@@ -53,9 +56,9 @@ export default function ConsultancySolution({ query }) {
 
       </p> */}
 
-      <NavBar ConsultancySolRef={consultancySolRef} />
+      <NavBar ConsultancySolRef={heroRef} />
 
-      <TopSection query={query} />
+      <TopSection query={query} heroRef={heroRef} />
 
       <IndividualAiming query={query} />
 
@@ -95,7 +98,7 @@ export default function ConsultancySolution({ query }) {
 
       <Stickyroll
         pages={1}
-        factor={1}
+        factor={4}
         onProgress={(progress, page, index) => {
           setProgress3({
             Page: page,

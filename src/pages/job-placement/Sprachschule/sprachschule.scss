@@ -109,6 +109,15 @@
       // padding: 1%;
       display: flex;
 
+      .logo-img {
+        position: absolute;
+        top: 5%;
+        left: 8%;
+        width: 28%;
+        object-fit: contain;
+        z-index: 1;
+      }
+
       .main-frame {
         position: absolute;
         width: 100%;
@@ -131,13 +140,29 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        padding-left: 2%;
+        margin-left: 6%;
 
         .heading {
           color: #fff;
           font-size: 1vw;
           font-weight: 600;
           line-height: 1.2;
+        }
+
+
+        h3 {
+          position: absolute;
+          top: 28%;
+          left: 80%;
+          font-size: 4.5vw;
+          font-weight: 900;
+          line-height: 0.9;
+          fill-color: #0000002b;
+          stroke-width: 1px;
+          stroke-color: #ffffff10;
+          -webkit-text-fill-color: #0000002b;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: #ffffff10;
         }
 
         .sub-heading {
@@ -159,7 +184,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        // padding: 0 5% 0 12%;
+        padding: 0 4% 0 5%;
 
         ul,
         p {
@@ -296,6 +321,16 @@
           // padding: 1%;
           display: flex;
 
+          .logo-img {
+            position: absolute;
+            top: 5%;
+            left: 8%;
+            width: 28%;
+            object-fit: contain;
+            z-index: 1;
+          }
+
+
           .main-frame {
             position: absolute;
             width: 100%;
@@ -318,13 +353,28 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
-            padding-left: 2%;
+            margin-left: 6%;
 
             .heading {
               color: #fff;
               font-size: 2.6vw;
               font-weight: 600;
               line-height: 1.2;
+            }
+
+            h3 {
+              position: absolute;
+              left: 80%;
+              top: 38%;
+              font-size: 12vw;
+              font-weight: 900;
+              line-height: 0.9;
+              fill-color: #0000002b;
+              stroke-width: 1px;
+              stroke-color: #ffffff10;
+              -webkit-text-fill-color: #0000002b;
+              -webkit-text-stroke-width: 1px;
+              -webkit-text-stroke-color: #ffffff10;
             }
 
             .sub-heading {
@@ -346,7 +396,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            padding: 0 0 0 4%;
+            padding: 0 4% 0 5%;
 
             ul,
             p {

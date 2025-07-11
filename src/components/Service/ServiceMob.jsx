@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import "./ServiceMob.scss";
 // import { useGSAP } from "@gsap/react";
@@ -9,9 +9,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import card1 from "../img/card-1.png";
 import card2 from "../img/card-2.png";
 import card3 from "../img/card-3.png";
+import card4 from "../img/card-4.png";
+
 import c1Img from "../img/c1-img.png";
 import c2Img from "../img/c2-img.png";
 import c3Img from "../img/c3-img.png";
+import c4Img from "../img/c4-img.png";
+
 import clogo from "../img/card-logo.png";
 import clogo1 from "../img/card-logo1.png";
 import bgDesign from "../img/bg-design.png";
@@ -19,6 +23,8 @@ import bgDesign from "../img/bg-design.png";
 gsap.registerPlugin(ScrollTrigger);
 
 export const ServiceMob = () => {
+  const scrollDivRef = useRef(null);
+
   // const scrollDivRef1 = useRef(null);
 
   //   useGSAP(() => {
@@ -72,7 +78,7 @@ export const ServiceMob = () => {
   // };
 
   return (
-    <div id="services-mob" className="service-mob">
+    <div id="services-mob" className="service-mob" ref={scrollDivRef}>
       <div className="ser-intro-txt-mob">
         <p
           style={{
@@ -100,16 +106,17 @@ export const ServiceMob = () => {
             className="ser-bg-design"
             src={bgDesign}
             alt=""
-            // style={{ width: "120%", height: "auto" }}
+          // style={{ width: "120%", height: "auto" }}
           />
           <div
             className="ser-scroll-div-mob"
             style={{ backgroundColor: "#2D3080" }}
-            // ref={cardRef}
-            // onMouseEnter={() => handleSerHover(1)}
-            // onMouseLeave={() => handleSerHover(0)}
+          // ref={cardRef}
+          // onMouseEnter={() => handleSerHover(1)}
+          // onMouseLeave={() => handleSerHover(0)}
           >
-            <Link className="link-to-mob" to="/language-learning" />
+            {/* <Link className="link-to-mob" to="/language-learning" /> */}
+            <a className="link-to-mob" href="#courses-mob" />
             <img className="ser-scroll-bg-mob" src={card1} alt="" />
             <div className="ser-c-img-box-mob">
               <img
@@ -145,7 +152,7 @@ export const ServiceMob = () => {
               backgroundColor: "#ffffff",
             }}
           >
-            <Link className="link-to-mob" to="/consultancy-solution" />
+            <Link className="link-to-mob" to="/language-learning" />
             <img className="ser-scroll-bg-mob" src={card2} alt="" />
             <div className="ser-c-img-box-mob">
               <img
@@ -178,7 +185,7 @@ export const ServiceMob = () => {
             className="ser-scroll-div-mob"
             style={{ backgroundColor: "#2D3080" }}
           >
-            <Link className="link-to-mob" to="/job-placement" />
+            <Link className="link-to-mob" to="/consultancy-solution" />
             <img className="ser-scroll-bg-mob" src={card3} alt="" />
             <div className="ser-c-img-box-mob">
               <img
@@ -200,6 +207,40 @@ export const ServiceMob = () => {
                 <p>
                   "Connecting you with job opportunities tailored to your German
                   language skills."
+                </p>
+              </div>
+            </div>
+            {/* <div className="ser-c-more-mob">
+              <p>Know More </p>
+            </div> */}
+          </div>
+          <div
+            className="ser-scroll-div-mob"
+            style={{
+              // backgroundColor: "#2D3080",
+              backgroundColor: "#ffffff",
+            }}
+          >
+            <Link className="link-to-mob" to="/job-placement" />
+            <img className="ser-scroll-bg-mob" src={card4} alt="" />
+            <div className="ser-c-img-box-mob">
+              <img
+                className="ser-c-img-mob"
+                src={c4Img}
+                alt=""
+              />
+            </div>
+
+            <div className="ser-c-detail-box-mob" style={{ color: "#2D3080" }}>
+              <div className="c-logo-parent-mob">
+                <img className="ser-c-logo-mob" src={clogo1} alt="" />
+              </div>
+              <div className="ser-c-heading-mob">
+                <p>Nursing Career</p>
+              </div>
+              <div className="ser-c-desc-mob">
+                <p>
+                  Germany’s aging population drives strong demand for skilled nurses.
                 </p>
               </div>
             </div>

@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.scss";
-import imgLogo from "../img/Logo.png";
+// import imgLogo from "../img/Logo.png";
+import imgLogo from "../../assets/logo.png";
+
 import fb from "../img/FB.png";
 import tw from "../img/Twitter.png";
 import ig from "../img/Insta.png";

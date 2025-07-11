@@ -46,9 +46,9 @@ const NavBar = ({ ConsultancySolRef }) => {
     <>
       <div
         ref={navRef}
-        className="navbar fixed top-2 left-1/2 -translate-x-1/2 w-[96%] h-[70px] md:h-[80px] px-8 py-4 flex justify-between items-center rounded-3xl z-50"
+        className="navbar fixed top-2 left-1/2 -translate-x-1/2 w-[96%] h-[60px] md:h-[80px] px-8 py-4 flex justify-between items-center rounded-3xl z-50"
       >
-        <div className="logo-container w-16 h-16 md:w-20 md:h-20">
+        <div className="logo-container w-24 h-20 md:w-40 md:h-40 lg:w-50 lg:h-50">
           <img
             src={logo}
             alt="logo"

@@ -1,16 +1,16 @@
 .query-page-main {
   position: relative;
   width: 100%;
-  height: 34.5vh;
+  height: 60.5vh;
 
   .qp-cont-outside {
     position: absolute;
-    bottom: 0;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     width: 50vw;
-    height: 80%;
-    border-radius: 0.35vw;
+    height: 70%;
+    border-radius: 0.8vw;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -21,11 +21,11 @@
       rgba(255, 197, 55, 0) 100%
     );
     .qp-cont {
-      width: 99.5%;
-      height: 99.25%;
+      width: 99%;
+      height: 99%;
       background-color: #ffe8af;
       // border:1px solid red;
-      border-radius: 0.35vw;
+      border-radius: 0.7vw;
       display: flex;
 
       .qp-inside1 {

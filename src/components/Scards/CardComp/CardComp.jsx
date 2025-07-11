@@ -92,6 +92,8 @@ const CardComp = ({ C, Logo, bool, X, id }) => {
           <button className="know-more-btn">Know More</button>
         </Link>
       </div>
+      <p className="card-no">{id}</p>
+
     </div>
   );
 };

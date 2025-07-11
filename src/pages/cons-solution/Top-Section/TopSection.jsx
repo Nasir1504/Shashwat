@@ -10,10 +10,10 @@ import BluredCircle1 from "../../../assets/imgs/language-learning/blured-circle1
 
 import textVector from "../../../assets/imgs/language-learning/text-vector.png";
 
-export default function TopSection({ query }) {
+export default function TopSection({ query, heroRef }) {
   return (
     <div className="cs-top-section-main">
-      <section className="left-section">
+      <section className="left-section" ref={heroRef}>
         <img src={BluredCircle1} alt="" className="blured-circle3" />
 
         <p className="main-heading">

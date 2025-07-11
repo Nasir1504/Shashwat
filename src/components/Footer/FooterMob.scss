@@ -11,10 +11,12 @@
   //   background-color: red;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  // padding-top: 5%;
 
   .f-parent-mob {
     position: relative;
+    margin-top: 6%;
     height: 80%;
     width: 90%;
     // border: 1px solid white;
@@ -40,11 +42,12 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+
         // border: 1px solid red;
         .f-logo-mob {
           position: relative;
           height: auto;
-          width: 50%;
+          width: 35vw;
           object-fit: contain;
           cursor: pointer;
         }
@@ -79,6 +82,7 @@
         align-items: center;
         font-weight: 700;
         left: 0%;
+        top: 10%;
       }
 
       .f-socials-div-mob {
@@ -86,7 +90,7 @@
         height: 40%;
         // width: 25%;
         // border: 1px solid red;
-        top: 40%;
+        top: 60%;
         left: -1%;
         display: flex;
         justify-content: space-between;
@@ -117,7 +121,7 @@
         height: 70%;
         width: 85%;
         // border: 1px solid red;
-        bottom: 10%;
+        bottom: 0%;
         left: -1%;
         display: flex;
         justify-content: space-between;
@@ -164,6 +168,7 @@
           justify-content: center;
           align-items: center;
           margin-right: 6%;
+
           // background-color: green;
           .f-c-ico-mob {
             height: auto;

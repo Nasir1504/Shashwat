@@ -39,11 +39,9 @@
     // overflow-x: scroll;
     border-radius: 4vw;
     // background: linear-gradient(359.77deg, #686bc7 -11.31%, #272ccf 97%);
-    background: linear-gradient(
-      171.64deg,
-      rgba(147, 149, 250, 0.9) 6.41%,
-      rgba(54, 55, 122, 0.9) 100%
-    );
+    background: linear-gradient(171.64deg,
+        rgba(147, 149, 250, 0.9) 6.41%,
+        rgba(54, 55, 122, 0.9) 100%);
 
     .ser-bg-design {
       position: absolute;
@@ -64,10 +62,11 @@
       //   border: 1px solid greenyellow;
       padding-left: 1.5vw;
       padding-right: 1.5vw;
+      gap: 1%;
 
       .ser-scroll-div-mob {
         position: relative;
-        min-height: 30%;
+        min-height: 24%;
         // height: 100%;
         width: 100%;
         // border: 1px solid white;
@@ -110,9 +109,9 @@
 
           .ser-c-img-mob {
             position: relative;
-            height: auto;
-            width: auto;
+            min-width: 110%;
             object-fit: cover;
+
           }
         }
 
@@ -121,7 +120,7 @@
           height: 75%;
           width: 45%;
           left: 4%;
-          bottom: 0;
+          // bottom: 0;
           //   border: 1px solid white;
           font-size: 1vw;
           display: flex;
@@ -134,7 +133,7 @@
             position: absolute;
             height: 25%;
             width: 35%;
-            top: -4%;
+            top: 0%;
             left: 0%;
             display: flex;
             justify-content: center;
@@ -153,29 +152,29 @@
             position: absolute;
             height: 30%;
             width: 70%;
-            top: 18%;
+            top: 30%;
             left: 0%;
             // border: 1px solid red;
-            font-size: 4.5vw;
+            font-size: 4vw;
             font-weight: 700;
             display: flex;
             justify-content: center;
             align-items: center;
-            line-height: 1.1rem;
+            line-height: 1;
           }
 
           .ser-c-desc-mob {
             position: absolute;
             height: 30%;
             width: 100%;
-            top: 50%;
+            top: 70%;
             // border: 1px solid green;
             font-size: 2vw;
             font-weight: 100;
             display: flex;
             justify-content: center;
             align-items: center;
-            line-height: 0.8rem;
+            line-height: 1;
           }
         }
 
@@ -194,11 +193,9 @@
           border: 1px solid white;
           cursor: pointer;
           background:
-            linear-gradient(
-              0deg,
+            linear-gradient(0deg,
               rgba(196, 196, 196, 0.05),
-              rgba(196, 196, 196, 0.05)
-            ),
+              rgba(196, 196, 196, 0.05)),
             linear-gradient(0deg, #373bb4, #373bb4);
           cursor: pointer;
         }

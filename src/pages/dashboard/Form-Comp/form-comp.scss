@@ -1,0 +1,176 @@
+.form-comp-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .search-wrapper {
+        width: 20%;
+        border: 1px solid #d4d4d4;
+        border-radius: 500px;
+        padding: 0.2em;
+        display: flex;
+        gap: 1%;
+        margin: 1% 0 0 0;
+
+        .search-icon {
+            pointer-events: none;
+        }
+
+        input {
+            width: 100%;
+            outline: none;
+
+        }
+    }
+
+
+    .table-list {
+        width: 100%;
+        height: 85%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        // border: 1px solid #000;
+        display: flex;
+        flex-direction: column;
+
+        thead {
+            width: 100%;
+            height: 8%;
+            // border: 1px solid #000;
+            display: flex;
+            align-items: center;
+            background-color: #F1F4F9;
+            border: none;
+            border-radius: 0.6vw;
+
+            tr {
+                width: 100%;
+                font-weight: 500;
+                font-size: 1vw;
+                // background-color: #fff000;
+                display: flex;
+
+                th {
+                    font-size: 1vw;
+                    font-weight: 500;
+                    padding-left: 1em;
+                    // border: 1px solid #000;
+                    text-align: left;
+
+                }
+
+                .name {
+                    width: 20%;
+                }
+
+                .email {
+                    width: 20%;
+                }
+
+                .contact {
+                    width: 15%;
+                }
+
+                .message {
+                    width: 45%;
+                    text-align: center;
+
+                }
+            }
+        }
+
+        tbody {
+            width: 100%;
+            height: 9%;
+            // border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            font-weight: 500;
+            border: none;
+            border-radius: 0.6vw;
+            font-size: 1vw;
+            padding: 0 1em;
+
+            tr {
+                width: 100%;
+                min-height: 100%;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #ccc;
+
+                td {
+                    height: 100%;
+                    font-size: 1vw;
+                    font-weight: 500;
+                    text-align: left;
+                    font-size: 1vw;
+                    color: #202224;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .name {
+                    width: 20%;
+                }
+
+                .email {
+                    width: 20%;
+                }
+
+                .contact {
+                    width: 15%;
+                }
+
+                .message {
+                    width: 45%;
+                    overflow: hidden;
+                    align-items: center;
+
+                    span {
+                        overflow: hidden;
+                        height: 50%;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+    .btn-main {
+        width: 100%;
+        height: 10%;
+        // border: 1px solid #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .pageNumBtn {
+            padding: 0 4%;
+            display: flex;
+            gap: 1em;
+
+            // button {
+            //     background-color: #fff000;
+            // }
+        }
+
+        button {
+            font-size: 1vw;
+
+        }
+
+        button:disabled {
+            color: #aaa;
+            /* Or any color you like */
+            cursor: auto;
+        }
+    }
+
+
+
+}

@@ -29,21 +29,21 @@ const Scards = ({ homeRef }) => {
         })
         .to(".div-sec1", {
           duration: 5,
-          height: "42vh",
+          height: "40vh",
           // ease: "none",
         })
         .to(
           ".ds2-h1",
           {
             duration: 5,
-            yPercent: -160,
+            yPercent: -175,
             // ease: "none",
           },
           "-=2",
         )
         .to(".ds2-p", {
           duration: 10,
-          yPercent: -300,
+          yPercent: -330,
           // ease: "none",
         });
 

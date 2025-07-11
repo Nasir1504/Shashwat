@@ -42,13 +42,14 @@
     .ser-scroll-div-parent {
       position: absolute;
       height: 95%;
-      width: 160%;
+      width: 200%;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      //   border: 1px solid greenyellow;
+        // border: 1px solid greenyellow;
       padding-left: 1.5vw;
       padding-right: 1.5vw;
+      gap: 1%;
 
       .ser-scroll-div {
         position: relative;
@@ -103,7 +104,7 @@
           height: 75%;
           width: 45%;
           left: 4%;
-          bottom: 0;
+          // bottom: 0;
           // border: 1px solid white;
           font-size: 1vw;
           display: flex;
@@ -111,12 +112,13 @@
           align-items: center;
           color: white;
           text-align: left;
+          gap: 20%;
 
           .c-logo-parent {
             position: absolute;
             height: 20%;
-            width: 30%;
-            top: -2%;
+            width: 50%;
+            top: 0%;
             left: -5%;
             display: flex;
             justify-content: center;
@@ -126,7 +128,7 @@
 
             .ser-c-logo {
               height: auto;
-              width: 80%;
+              width: 100%;
               object-fit: contain;
             }
           }
@@ -135,7 +137,7 @@
             position: absolute;
             height: 30%;
             width: 70%;
-            top: 18%;
+            top: 45%;
             left: 0%;
             // border: 1px solid red;
             font-size: 2.5vw;
@@ -150,7 +152,7 @@
             position: absolute;
             height: 30%;
             width: 100%;
-            top: 50%;
+            top: 80%;
             // border: 1px solid green;
             font-size: 1.2vw;
             font-weight: 100;

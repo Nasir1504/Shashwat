@@ -93,6 +93,8 @@ const CardsMob = ({ C, Logo, bool, X, id }) => {
           <button className="know-more-btn-mb">Know More</button>
         </Link>
       </div>
+
+      <p className="card-no">{id}</p>
     </div>
   );
 };

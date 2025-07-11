@@ -46,9 +46,9 @@ const NavBar = ({ JobPlacementRef }) => {
     <>
       <div
         ref={navRef}
-        className="navbar fixed top-2 left-1/2 -translate-x-1/2 w-[96%] h-[70px] md:h-[80px] px-8 py-4 flex justify-between items-center rounded-3xl z-50"
+        className="navbar fixed top-2 left-1/2 -translate-x-1/2 w-[96%] h-[60px] md:h-[80px] px-8 py-4 flex justify-between items-center rounded-3xl z-50"
       >
-        <div className="logo-container w-16 h-16 md:w-20 md:h-20">
+        <div className="logo-container w-24 h-20 md:w-40 md:h-40 lg:w-50 lg:h-50">
           <img
             src={logo}
             alt="logo"
@@ -107,9 +107,8 @@ const NavBar = ({ JobPlacementRef }) => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed top-0 left-0 w-3/4 h-full bg-gradient-mobile shadow-lg shadow-black rounded-r-[38px] text-white p-8 transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out z-[60]`}
+        className={`fixed top-0 left-0 w-3/4 h-full bg-gradient-mobile shadow-lg shadow-black rounded-r-[38px] text-white p-8 transform ${isOpen ? "translate-x-0" : "-translate-x-full"
+          } transition-transform duration-300 ease-in-out z-[60]`}
       >
         <div className="absolute top-4 left-4 text-3xl text-white">Menu</div>
         <div className="absolute w-[90%] top-16 left-4 bg-white h-[1px]" />

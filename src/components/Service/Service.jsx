@@ -11,9 +11,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import card1 from "../img/card-1.png";
 import card2 from "../img/card-2.png";
 import card3 from "../img/card-3.png";
+import card4 from "../img/card-4.png";
+
 import c1Img from "../img/c1-img.png";
 import c2Img from "../img/c2-img.png";
 import c3Img from "../img/c3-img.png";
+import c4Img from "../img/c4-img.png";
+
 import clogo from "../img/card-logo.png";
 import clogo1 from "../img/card-logo1.png";
 import SplitType from "split-type";
@@ -64,7 +68,7 @@ export const Service = () => {
           ease: "power2.out",
         })
         .to(".ser-scroll-div-parent", {
-          xPercent: -38,
+          xPercent: -50,
           ease: "none",
           scrollTrigger: {
             trigger: scrollDivRef.current,
@@ -102,14 +106,15 @@ export const Service = () => {
             style={{ backgroundColor: "#2D3080" }}
             ref={cardRef}
           >
-            <Link className="link-to" to="/language-learning" />
+            {/* <Link className="link-to" to="/language-learning" /> */}
+            <a className="link-to" href="#courses" />
             <img className="ser-scroll-bg" src={card1} alt="" />
             <div className="ser-c-img-box">
               <img
                 className="ser-c-img"
                 src={c1Img}
                 alt=""
-                // style={{ width: "120%", height: "100%" }}
+              // style={{ width: "120%", height: "100%" }}
               />
             </div>
 
@@ -139,7 +144,7 @@ export const Service = () => {
               backgroundColor: "white",
             }}
           >
-            <Link className="link-to" to="/consultancy-solution" />
+            <Link className="link-to" to="/language-learning" />
             <img className="ser-scroll-bg" src={card2} alt="" />
             <div className="ser-c-img-box">
               <img className="ser-c-img" src={c3Img} alt="" />
@@ -151,7 +156,7 @@ export const Service = () => {
                   className="ser-c-logo"
                   src={clogo1}
                   alt=""
-                  style={{ width: "70%" }}
+                // style={{ width: "70%" }}
                 />
               </div>
               <div className="ser-c-heading" style={{ color: "#2D3080" }}>
@@ -172,7 +177,8 @@ export const Service = () => {
             className="ser-scroll-div"
             style={{ backgroundColor: "#2D3080" }}
           >
-            <Link className="link-to" to="/job-placement" />
+            <Link className="link-to" to="/consultancy-solution" />
+
             <img className="ser-scroll-bg" src={card3} alt="" />
             <div className="ser-c-img-box">
               <img className="ser-c-img" src={c2Img} alt="" />
@@ -184,10 +190,10 @@ export const Service = () => {
               </div>
               <div
                 className="ser-c-heading"
-                // style={{
-                //   left: "3%",
-                //   color: " #2D3080",
-                // }}
+              // style={{
+              //   left: "3%",
+              //   color: " #2D3080",
+              // }}
               >
                 <p>Job Placement</p>
               </div>
@@ -202,6 +208,44 @@ export const Service = () => {
               </div> */}
             </div>
           </div>
+
+
+          <div
+            className="ser-scroll-div"
+            style={{
+              // backgroundColor: "#2D3080",
+              backgroundColor: "white",
+            }}
+          >
+            <Link className="link-to" to="/job-placement" />
+            <img className="ser-scroll-bg" src={card4} alt="" />
+            <div className="ser-c-img-box">
+              <img className="ser-c-img" src={c4Img} alt="" />
+            </div>
+
+            <div className="ser-c-detail-box">
+              <div className="c-logo-parent">
+                <img
+                  className="ser-c-logo"
+                  src={clogo1}
+                  alt=""
+                // style={{ width: "70%" }}
+                />
+              </div>
+              <div className="ser-c-heading" style={{ color: "#2D3080" }}>
+                <p>Nursing Career</p>
+              </div>
+              <div className="ser-c-desc">
+                <p style={{ color: "black", marginTop: "-20px" }}>
+                  Germany’s aging population drives strong demand for skilled nurses.
+                </p>
+              </div>
+              {/* <div className="ser-c-more">
+                <p>Know More </p>
+              </div> */}
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
