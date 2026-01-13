@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import CourseDetails from "./pages/CourseDetails/CourseDetails";
 import LanguageLearning from "./pages/lang-learning/LanguageLearning";
@@ -36,8 +36,15 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home query={query} />} />
         <Route
-          path="/course-details"
+          path="/course-details/:courseId"
           element={<CourseDetails query={query} />}
+        />
+        {/* Redirect from a specific route */}
+        <Route path="/course-details" element={<Navigate to="/" replace />} />
+
+        <Route
+          path="/course-details/:blogName"
+          element={<div query={query} />}
         />
         <Route
           path="/language-learning"
@@ -54,8 +61,10 @@ const App = () => {
         />
         <Route
           path="/blog/:blogName"
-          element={<IndividualBlog query={query}/>}
+          element={<IndividualBlog query={query} />}
         />
+
+
 
         <Route
           path="/login"

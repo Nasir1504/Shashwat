@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./CardExpandMob.scss";
+import { Link } from "react-router-dom";
 
 const CardExpandMob = () => {
   const [count, setCount] = useState(1);
@@ -14,30 +15,35 @@ const CardExpandMob = () => {
       </div>
       <div className="card-expand-div2-mb">
         <div className="cards-container-mb">
+
           <div
             className="gc1 com-gc"
             // style={{clipPath: count >= 2 && "rect(-100px 5.25vw 380px -1vw)",zIndex:count>=2 && 3}}
             style={{
               transform:
-                count1 === 1
+                count1 === 0
                   ? "translateY(0)"
-                  : count1 !== 1 && "translateY(20vh)",
-              opacity: count1 === 1 && "1",
+                  : count1 !== 0 && "translateY(20vh)",
+              opacity: count1 === 0 && "1",
+              zIndex: count1 === 0 ? 2 : 0
             }}
           >
+
             <div className="mini-c1">
               <h2>LEVEL</h2>
               <h1>
-                A <span>2</span>
+                A <span>1</span>
               </h1>
             </div>
             <div
               className="mini-c2"
-              // style={{ transform:count >= 2 && "scale(0)"}}
+            // style={{ transform:count >= 2 && "scale(0)"}}
             >
               <p>
-                Lorem ipsum dolor sit <br /> amet consectetur <br /> Senectus
-                quam tincidunt <br /> tortor placerat urna{" "}
+                Build on A1 basics to<br />
+                improve grammar,<br />
+                sentence formation,<br />
+                and conversation.
               </p>
               <div className="duration-box">
                 <h2 className="db1">
@@ -47,7 +53,50 @@ const CardExpandMob = () => {
                   Language : <span>English</span>
                 </h2>
               </div>
-              <button className="shash-btn-cl">Know More</button>
+              <Link className="shash-btn-cl" to={`/course-details/a1`}>Know More</Link>
+            </div>
+          </div>
+
+          <div
+            className="gc1 com-gc"
+            // style={{clipPath: count >= 2 && "rect(-100px 5.25vw 380px -1vw)",zIndex:count>=2 && 3}}
+            style={{
+              transform:
+                count1 === 1
+                  ? "translateY(0)"
+                  : count1 !== 1 && "translateY(20vh)",
+              opacity: count1 === 1 && "1",
+              zIndex: count1 === 1 ? 2 : 0
+
+            }}
+          >
+
+            <div className="mini-c1">
+              <h2>LEVEL</h2>
+              <h1>
+                A <span>2</span>
+              </h1>
+            </div>
+            <div
+              className="mini-c2"
+            // style={{ transform:count >= 2 && "scale(0)"}}
+            >
+              <p>
+                Learn the basics of<br />
+                German language  <br />
+                including grammar,<br />
+                vocabulary, and everyday<br />
+                expressions.
+              </p>
+              <div className="duration-box">
+                <h2 className="db1">
+                  Duration : <span>3 Months</span>
+                </h2>
+                <h2 className="db2">
+                  Language : <span>English</span>
+                </h2>
+              </div>
+              <Link className="shash-btn-cl" to={`/course-details/a2`}>Know More</Link>
             </div>
           </div>
 
@@ -59,8 +108,10 @@ const CardExpandMob = () => {
                   ? "translateY(20vh)"
                   : count1 === 2 && "translateY(0vh)",
               opacity: count1 === 2 && "1",
+              zIndex: count1 === 2 ? 2 : 0
+
             }}
-            // onMouseEnter={()=>{setCount(2)}}
+          // onMouseEnter={()=>{setCount(2)}}
           >
             <div className="mini-c21">
               <h2>LEVEL</h2>
@@ -70,8 +121,10 @@ const CardExpandMob = () => {
             </div>
             <div className="mini-c22">
               <p>
-                Lorem ipsum dolor sit <br /> amet consectetur <br /> Senectus
-                quam tincidunt <br /> tortor placerat urna{" "}
+                Strengthen your grammar,<br />
+                vocabulary, and<br />
+                communication skills for<br />
+                everyday German usage.
               </p>
               <div className="duration-box">
                 <h2 className="db1">
@@ -81,7 +134,7 @@ const CardExpandMob = () => {
                   Language : <span>English</span>
                 </h2>
               </div>
-              <button className="shash-btn-cl">Know More</button>
+              <Link className="shash-btn-cl" to={`/course-details/b1`}>Know More</Link>
             </div>
           </div>
 
@@ -93,8 +146,10 @@ const CardExpandMob = () => {
                   ? "translateY(40vh)"
                   : count1 === 3 && "translateY(0vh)",
               opacity: count1 === 3 && "1",
+              zIndex: count1 === 3 ? 2 : 0
+
             }}
-            // onMouseEnter={()=>{setCount(3)}}
+          // onMouseEnter={()=>{setCount(3)}}
           >
             <div className="mini-c21">
               <h2>LEVEL</h2>
@@ -104,11 +159,13 @@ const CardExpandMob = () => {
             </div>
             <div
               className="mini-c22"
-              // style={{width:count<3 && "0vw", transform:count!==3 && "scale(0)"}}
+            // style={{width:count<3 && "0vw", transform:count!==3 && "scale(0)"}}
             >
               <p>
-                Lorem ipsum dolor sit <br /> amet consectetur <br /> Senectus
-                quam tincidunt <br /> tortor placerat urna{" "}
+                Move from B1 to C2<br />
+                with a structured<br />
+                path to fluency and<br />
+                certification.
               </p>
               <div className="duration-box">
                 <h2 className="db1">
@@ -118,7 +175,7 @@ const CardExpandMob = () => {
                   Language : <span>English</span>
                 </h2>
               </div>
-              <button className="shash-btn-cl">Know More</button>
+              <Link className="shash-btn-cl" to={`/course-details/b2`}>Know More</Link>
             </div>
           </div>
 
@@ -130,8 +187,10 @@ const CardExpandMob = () => {
                   ? "translateY(55vh)"
                   : count1 === 4 && "translateY(0vh)",
               opacity: count1 === 4 && "1",
+              zIndex: count1 === 4 ? 2 : 0
+
             }}
-            //  onMouseEnter={()=>{setCount(4)}}
+          //  onMouseEnter={()=>{setCount(4)}}
           >
             <div className="mini-c21">
               <h2>LEVEL</h2>
@@ -141,11 +200,13 @@ const CardExpandMob = () => {
             </div>
             <div
               className="mini-c22"
-              // style={{width:count <4 && "0vw", transform:count !==4 && "scale(0)"}}
+            // style={{width:count <4 && "0vw", transform:count !==4 && "scale(0)"}}
             >
               <p>
-                Lorem ipsum dolor sit <br /> amet consectetur <br /> Senectus
-                quam tincidunt <br /> tortor placerat urna{" "}
+                Advance from B1 to c2<br />
+                with a clear, structured<br />
+                path to fluency and<br />
+                certification.
               </p>
               <div className="duration-box">
                 <h2 className="db1">
@@ -155,7 +216,7 @@ const CardExpandMob = () => {
                   Language : <span>English</span>
                 </h2>
               </div>
-              <button className="shash-btn-cl">Know More</button>
+              <Link className="shash-btn-cl" to={`/course-details/c1`}>Know More</Link>
             </div>
           </div>
 
@@ -167,6 +228,8 @@ const CardExpandMob = () => {
                   ? "translateY(70vh)"
                   : count1 === 5 && "translateY(0vh)",
               opacity: count1 === 5 && "1",
+              zIndex: count1 === 5 ? 2 : 0
+
             }}
           >
             <div className="mini-c21">
@@ -177,8 +240,10 @@ const CardExpandMob = () => {
             </div>
             <div className="mini-c22">
               <p>
-                Lorem ipsum dolor sit <br /> amet consectetur <br /> Senectus
-                quam tincidunt <br /> tortor placerat urna{" "}
+                Progress from B1 to<br />
+                C2 with a structured<br />
+                path to fluency and<br />
+                certification.
               </p>
               <div className="duration-box">
                 <h2 className="db1">
@@ -188,10 +253,34 @@ const CardExpandMob = () => {
                   Language : <span>English</span>
                 </h2>
               </div>
-              <button className="shash-btn-cl">Know More</button>
+              <Link className="shash-btn-cl" to={`/course-details/c2`}>Know More</Link>
             </div>
           </div>
         </div>
+
+
+
+        <div
+          className="level-cards-mb"
+          style={{
+            display: count === 0 && "none",
+            transform: count1 === 0 && "translateY(-20vh)",
+            opacity: count1 === 0 && "0",
+            zIndex: count1 === 6 ? 2 : 0
+
+          }}
+          onMouseOver={() => {
+            setTimeout(() => {
+              setCount(0);
+            }, 800);
+            setCount1(0);
+          }}
+        >
+          <h2>
+            LEVEL <span>A1</span>
+          </h2>
+        </div>
+
 
         <div
           className="level-cards-mb"

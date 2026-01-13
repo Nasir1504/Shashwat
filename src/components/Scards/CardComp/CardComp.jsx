@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./CardComp.scss";
 import Star from "../../../assets/imgs/StarShaash.png";
@@ -6,7 +6,38 @@ import YT from "../../../assets/imgs/youTubeIcon.png";
 import User from "../../../assets/imgs/userIcon.png";
 import Chart from "../../../assets/imgs/Chart.png";
 
+
 const CardComp = ({ C, Logo, bool, X, id }) => {
+  const [page, setPage] = useState("")
+  // console.log(page)
+
+  useEffect(() => {
+
+    switch (id) {
+      case 1:
+        setPage("a1")
+        break;
+      case 2:
+        setPage("a2")
+        break;
+      case 3:
+        setPage("b1")
+        break;
+      case 4:
+        setPage("b2")
+        break;
+      case 5:
+        setPage("c1")
+        break;
+      case 6:
+        setPage("c2")
+        break;
+
+      default:
+        break;
+    }
+  }, [page, id])
+
   return (
     <div className="card-div-cont conty1">
       <img className="card-div-img" src={C} alt="" />
@@ -87,10 +118,12 @@ const CardComp = ({ C, Logo, bool, X, id }) => {
             <p className="cl-info-p bluish">Elementary</p>
           </div>
         </div>
-        <Link to="/course-details">
+        <div to="/course-details">
           {" "}
-          <button className="know-more-btn">Know More</button>
-        </Link>
+
+          <Link className="know-more-btn" to={`/course-details/${page}`}>Know More</Link>
+
+        </div>
       </div>
       <p className="card-no">{id}</p>
 

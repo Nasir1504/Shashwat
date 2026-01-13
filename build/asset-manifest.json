@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.eb9c8ea2.css",
-    "main.js": "/static/js/main.92631270.js",
+    "main.css": "/static/css/main.9f228ba5.css",
+    "main.js": "/static/js/main.83e4dcfd.js",
     "static/media/gradient-bg.png": "/static/media/gradient-bg.30cd32cb4fefeb394d7c.png",
+    "static/media/Frame1321315403_3.png": "/static/media/Frame1321315403_3.533b74223708abd56b05.png",
     "static/media/hero-avatar2.png": "/static/media/hero-avatar2.d24d3f537c6164ca0d7a.png",
     "static/media/step4.png": "/static/media/step4.927de80db71df7fe3afd.png",
+    "static/media/Frame1321315402_2.png": "/static/media/Frame1321315402_2.b24292ba72b948c34f08.png",
     "static/media/blured-circle.png": "/static/media/blured-circle.4e336febca73813e7086.png",
     "static/media/step5.png": "/static/media/step5.3815b71e86af18bcb80b.png",
     "static/media/step3.png": "/static/media/step3.16d13cfab35f6121292d.png",
+    "static/media/Frame1321315404.png": "/static/media/Frame1321315404.4949e7b537f4135a4112.png",
+    "static/media/Frame1321315404_4.png": "/static/media/Frame1321315404_4.4949e7b537f4135a4112.png",
     "static/media/shashBgImg1.png": "/static/media/shashBgImg1.e66cd1ffa07eb7136c2c.png",
     "static/media/abstract-marble-texture.png": "/static/media/abstract-marble-texture.c96aa62c75e0cced59b3.png",
     "static/media/step2.png": "/static/media/step2.970a55f16b45457fbb65.png",
     "static/media/concentImg.png": "/static/media/concentImg.9285a5101e09c977dd5e.png",
     "static/media/blured-circle1.png": "/static/media/blured-circle1.42f6152a8e58bb966fe7.png",
+    "static/media/Frame1321315402.png": "/static/media/Frame1321315402.bf04d46af47e177bea3a.png",
     "static/media/step1_4.png": "/static/media/step1_4.c99f6b5417d9428600db.png",
     "static/media/germany-will-need.png": "/static/media/germany-will-need.bbe7d93032df7a5864dc.png",
     "static/media/step1_5.png": "/static/media/step1_5.62bd17d05ff68b119cb8.png",
@@ -28,6 +33,7 @@
     "static/media/Gilroy-ExtraBold.svg": "/static/media/Gilroy-ExtraBold.391d24391dacc0efc8eb.svg",
     "static/media/Gilroy-Light.svg": "/static/media/Gilroy-Light.24fc9278d3af0e1424e6.svg",
     "static/media/Gilroy-Regular.svg": "/static/media/Gilroy-Regular.a1cf5ba7908f3c5935be.svg",
+    "static/media/Frame1321315403.png": "/static/media/Frame1321315403.643fa0ca5186220c1a0c.png",
     "static/media/hero-avatar.png": "/static/media/hero-avatar.966b28996e724f194471.png",
     "static/media/img-frame1.png": "/static/media/img-frame1.77fd2b9fb197d1a59a78.png",
     "static/media/bg-design.png": "/static/media/bg-design.7803423ee765d504946a.png",
@@ -46,6 +52,7 @@
     "static/media/c3-img.png": "/static/media/c3-img.3fdb6d2c40c72dffb6c3.png",
     "static/media/c1-img.png": "/static/media/c1-img.d92cccb0755899d7d97b.png",
     "static/media/wcu4.png": "/static/media/wcu4.9441c8bd2e8cd9cb10af.png",
+    "static/media/Frame1321315400.png": "/static/media/Frame1321315400.7fc58e6f8d7496879254.png",
     "static/media/c2-img.png": "/static/media/c2-img.22ca825dd08fd6ed1347.png",
     "static/media/career-option-heading.png": "/static/media/career-option-heading.09ec707d369674ab0aa1.png",
     "static/media/wcu6.png": "/static/media/wcu6.7b4494d6a0787be27d3b.png",
@@ -123,15 +130,16 @@
     "static/media/eligibility-criteria-heading2.png": "/static/media/eligibility-criteria-heading2.8ff7a1e67ca925486617.png",
     "static/media/TestimonialBg2.png": "/static/media/TestimonialBg2.0141f57c8acca34493cf.png",
     "static/media/hr-line.png": "/static/media/hr-line.d3c9052b39273e95b483.png",
+    "static/media/uploadIcon.svg": "/static/media/uploadIcon.8ef42718f5cae0390197ac3b9f530926.svg",
     "static/media/icon.png": "/static/media/icon.12aa358ee196aafd60bd.png",
     "static/media/imggg12.png": "/static/media/imggg12.f8a567df4d097c7e2905.png",
     "static/media/icon2.png": "/static/media/icon2.cdeab548b4146f0a80c4.png",
     "index.html": "/index.html",
-    "main.eb9c8ea2.css.map": "/static/css/main.eb9c8ea2.css.map",
-    "main.92631270.js.map": "/static/js/main.92631270.js.map"
+    "main.9f228ba5.css.map": "/static/css/main.9f228ba5.css.map",
+    "main.83e4dcfd.js.map": "/static/js/main.83e4dcfd.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb9c8ea2.css",
-    "static/js/main.92631270.js"
+    "static/css/main.9f228ba5.css",
+    "static/js/main.83e4dcfd.js"
   ]
 }

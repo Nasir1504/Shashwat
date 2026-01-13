@@ -20,8 +20,7 @@ export const FooterMob = () => {
 
           <div className="f-logo-txt-mob">
             <p>
-              Lorem ipsum dolor sit amet consectetur. Elit malesuada fusce quis
-              ullamcorper sed tincidunt. Ut morbi senectus praesent consequat.
+              We offer practical, interactive German courses for all levels, making learning easy and effective.
             </p>
           </div>
         </div>
@@ -113,10 +112,10 @@ export const FooterMob = () => {
             }}
           >
             <p className="f-link-mob" style={{ height: "25%" }}>
-              +91-8541265471
+              +91-9687204060
             </p>
             <p className="f-link-mob" style={{}}>
-              support@shashwat.com
+              shashwatgermanschool@gmail.com
             </p>
           </div>
           <div className="f-contact-div-mob">

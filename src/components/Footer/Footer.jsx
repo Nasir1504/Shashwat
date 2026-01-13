@@ -20,8 +20,7 @@ export const Footer = () => {
 
           <div className="f-logo-txt">
             <p>
-              Lorem ipsum dolor sit amet consectetur. Elit malesuada fusce quis
-              ullamcorper sed tincidunt. Ut morbi senectus praesent consequat.
+              We offer practical, interactive German courses for all levels, making learning easy and effective.
             </p>
           </div>
         </div>
@@ -93,10 +92,10 @@ export const Footer = () => {
             }}
           >
             <p className="f-link" style={{}}>
-              +91-8541265471
+              +91-9687204060
             </p>
             <p className="f-link" style={{}}>
-              support@shashwat.com
+              shashwatgermanschool@gmail.com
             </p>
           </div>
           <div className="f-contact-div">

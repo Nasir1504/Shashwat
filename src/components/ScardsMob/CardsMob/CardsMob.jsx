@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./CardsMob.scss";
 import Star from "../../../assets/imgs/StarShaash.png";
@@ -7,6 +7,38 @@ import User from "../../../assets/imgs/userIcon.png";
 import Chart from "../../../assets/imgs/Chart.png";
 
 const CardsMob = ({ C, Logo, bool, X, id }) => {
+
+  const [page, setPage] = useState("")
+  // console.log(page)
+
+  useEffect(() => {
+
+    switch (id) {
+      case 1:
+        setPage("a1")
+        break;
+      case 2:
+        setPage("a2")
+        break;
+      case 3:
+        setPage("b1")
+        break;
+      case 4:
+        setPage("b2")
+        break;
+      case 5:
+        setPage("c1")
+        break;
+      case 6:
+        setPage("c2")
+        break;
+
+      default:
+        break;
+    }
+  }, [page, id])
+
+
   return (
     <div className="card-div-cont-mb conty1-mb">
       <img className="card-div-img-mb" src={C} alt="" />
@@ -89,9 +121,9 @@ const CardsMob = ({ C, Logo, bool, X, id }) => {
             <p className="cl-info-p-mb bluish-mb">Elementary</p>
           </div>
         </div>
-        <Link to="/course-details">
-          <button className="know-more-btn-mb">Know More</button>
-        </Link>
+        <div to="/course-details">
+          <Link className="know-more-btn-mb" to={`/course-details/${page}`}>Know More</Link>
+        </div>
       </div>
 
       <p className="card-no">{id}</p>
