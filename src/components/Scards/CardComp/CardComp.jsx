@@ -121,7 +121,11 @@ const CardComp = ({ C, Logo, bool, X, id }) => {
         <div to="/course-details">
           {" "}
 
-          <Link className="know-more-btn" to={`/course-details/${page}`}>Know More</Link>
+          <button className="know-more-btn" >
+            <Link to={`/course-details/${page}`}>
+              Know More
+            </Link>
+          </button>
 
         </div>
       </div>
